@@ -1,0 +1,158 @@
+
+
+%% Basierend auf einer TeXnicCenter-Vorlage von Mark Müller
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Wählen Sie die Optionen aus, indem Sie % vor der Option entfernen  
+% Dokumentation des KOMA-Script-Packets: scrguide
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optionen zum Layout des Artikels                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[%
+%a5paper,							% alle weiteren Papierformat einstellbar
+%landscape,						% Querformat
+12pt,								% Schriftgröße (12pt, 11pt (Standard))
+%BCOR1cm,							% Bindekorrektur, bspw. 1 cm
+%DIVcalc,							% führt die Satzspiegelberechnung neu aus
+%											  s. scrguide 2.4
+%twoside,							% Doppelseiten
+%twocolumn,						% zweispaltiger Satz
+%halfparskip*,				% Absatzformatierung s. scrguide 3.1
+%headsepline,					% Trennline zum Seitenkopf	
+%footsepline,					% Trennline zum Seitenfuß
+titlepage,						% Titelei auf eigener Seite
+%normalheadings,			% Überschriften etwas kleiner (smallheadings)
+%idxtotoc,						% Index im Inhaltsverzeichnis
+%liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
+%bibtotoc,						% Literaturverzeichnis im Inhalt
+%abstracton,					% Überschrift über der Zusammenfassung an	
+%leqno,   						% Nummerierung von Gleichungen links
+%fleqn,								% Ausgabe von Gleichungen linksbündig
+%draft								% überlangen Zeilen in Ausgabe gekennzeichnet
+bibliography=totoc
+]
+{scrartcl}
+
+\usepackage{geometry}
+\geometry{a4paper, left=45mm, right=20mm, top=30mm, bottom=30mm}
+% http://www.macuser.de/forum/f19/latex-zeilenabstand-aendern-189206/
+\usepackage{setspace}
+
+% Hurenkinder und Schusterjungen verhindern
+\clubpenalty10000
+\widowpenalty10000
+\displaywidowpenalty=10000
+
+\usepackage[flushmargin,hang,ragged]{footmisc}
+
+%\pagestyle{empty}		% keine Kopf und Fußzeile (k. Seitenzahl)
+%\pagestyle{headings}	% lebender Kolumnentitel  
+
+
+%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{graphicx}
+
+\usepackage{lmodern} %Type1-Schriftart für nicht-englische Texte
+\usepackage{fancyhdr}
+
+%\usepackage{cite}
+%\renewcommand{\citeleft}{}
+%\renewcommand{\citeright}{}
+
+%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%Zum Laden von Grafiken
+%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
+%\usepackage{pst-all} %%PSTricks - nicht verwendbar mit pdfLaTeX
+
+%% Beachten Sie:
+%% Die Einbindung einer Grafik erfolgt mit \includegraphics{Dateiname}
+%% bzw. über den Dialog im Einfügen-Menü.
+%% 
+%% Im Modus "LaTeX => PDF" können Sie u.a. folgende Grafikformate verwenden:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% In den Modi "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% können Sie u.a. folgende Grafikformate verwenden:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+%% Bibliographiestil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[style=authoryear,backend=bibtex8]{biblatex}
+\usepackage[babel,german=quotes]{csquotes}
+%\addbibresource{Literatur.bib}
+\bibliography{./Literatur}
+
+\begin{document}
+\parskip=1em
+\parindent=0cm
+\pagestyle{empty} %%Keine Kopf-/Fusszeilen auf den ersten Seiten.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ihr Artikel                                                       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% eigene Titelseitengestaltung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%\begin{titlepage}
+%Einsetzen der TXC Vorlage "Deckblatt" möglich
+\input{Deckblatt.tex}
+%\end{titlepage}
+
+%% Erzeugung von Verzeichnissen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{2}
+\tableofcontents			% Inhaltsverzeichnis
+%\listoftables				% Tabellenverzeichnis
+\listoffigures				% Abbildungsverzeichnis
+\clearpage
+
+
+%% Der Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headings}
+\begin{onehalfspacing}
+\input{Einleitung.tex}
+\input{Grundlagen.tex}
+\input{redaktionelleskonzept.tex}
+\input{navigationskonzept.tex}
+\input{designkonzept.tex}
+\input{Fazit.tex}
+\end{onehalfspacing}
+
+%% Bibliographie unter Verwendung von dinnat %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setbibpreamble{Präambel}		% Text vor dem Verzeichnis
+%\bibliographystyle{natdin}
+%\bibliographystyle{plaindin}
+%\bibliography{Literatur}	% Sie benötigen eine *.bib-Datei
+
+%% Bibliographie unter Verwendung von BibLaTeX %%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\flushleft
+\setlength{\bibitemsep}{1em}
+\printbibliography
+
+\clearpage
+
+\pagestyle{empty} 
+\thispagestyle{empty}
+
+\textsc{\Large Eidesstattliche Erkl"arung}
+\vspace*{4cm}
+
+Ich versichere, dass ich das beiliegende Assignment selbstst"andig verfasst, keine anderen als die angegebenen Quellen und Hilfsmittel benutzt sowie alle w"ortlich oder sinngem"a"s "ubernommenen Stellen in der Arbeit gekennzeichnet habe. 
+\vspace{3cm}
+
+\begin{tabbing}
+Wherever, \today \hspace{1em} \=\rule[-0.8ex]{6.5cm}{0.75pt}\\
+                \>(Matthias Vongerichten) 
+\end{tabbing}
+\vspace{3cm}
+
+\begin{tabbing}
+Neuenburg am Rhein, \today \hspace{1em} \=\rule[-0.8ex]{6.5cm}{0.75pt}\\
+                \>(Stefan Waidele) 
+\end{tabbing}
+
+
+\end{document}
