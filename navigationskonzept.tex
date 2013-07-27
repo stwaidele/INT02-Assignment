@@ -2,9 +2,11 @@
 
 \textsc{Mathias Vongerichten bzw. Stefan Waidele}
 
-\subsection{Überschrift}
+\subsection{Techniche Umsetzung einheitlicher Navigation}
 
-Evt. kann dies auch als Teil des redaktionellen bzw. Designkonzepts formuliert werden.
+Das Seitengerüst sollte in zentralen HTML-Dateien gespeichert sein. Die Detailseiten können dann Header, Menüs, Seitenleisten und Footer per PHP-Includes eingelesen werden.
+
+Oder (bessere Lösung): Eine Zentrale PHP-Datei liest in die einheitliche Struktur die Details der Seite ein. Parameterübergabe in der URL mit .../index.php?page=impressum oder Apache Mod-Rewrite (wg. SEO).
 
 \subsection{Seitenhierarchie}
 
