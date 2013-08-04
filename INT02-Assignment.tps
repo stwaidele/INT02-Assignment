@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=INT02-Assignment.tex
+Document=Einleitung.tex
 
 [Frame0_View0,0]
-TopLine=108
-Cursor=4164
+TopLine=0
+Cursor=345
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=Deckblatt.tex
+Document=INT02-Assignment.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=628
+TopLine=123
+Cursor=5013
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=beispielhomepage.tex
+Document=Deckblatt.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=0
+Cursor=628
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=beispielreisedetails.tex
+Document=beispielhomepage.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=202
+Cursor=0
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=beispielwirueberuns.tex
+Document=beispielreisedetails.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=44
+Cursor=202
 
 [Frame5]
 Flags=0
@@ -101,14 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=beispielimpressum.tex
+Document=beispielwirueberuns.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=197
+Cursor=44
 
 [Frame6]
 Flags=0
@@ -119,14 +119,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=navigationskonzept.tex
+Document=beispielimpressum.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=532
+Cursor=197
 
 [Frame7]
 Flags=0
@@ -137,14 +137,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=designkonzept.tex
+Document=navigationskonzept.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=336
+Cursor=532
 
 [Frame8]
 Flags=0
@@ -155,14 +155,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
-Document=Einleitung.tex
+Document=designkonzept.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=198
+Cursor=336
 
 [Frame9]
 Flags=0
@@ -173,8 +173,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
 Document=redaktionelleskonzept.tex
 
@@ -191,8 +191,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
 Document=beispiellaenderuebersicht.tex
 
@@ -209,8 +209,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
 Document=beispielbusse.tex
 
@@ -227,8 +227,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
+NormalPos.right=946
+NormalPos.bottom=386
 Class=LaTeXView
 Document=beispieluebernachtung.tex
 

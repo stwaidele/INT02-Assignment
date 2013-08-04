@@ -1,5 +1,8 @@
-# Unter Webseiten werden die Online-Quellen abgespeichert
-Webseiten/
+# Unter Internetquellen/ werden die Online-Quellen abgespeichert
+Internetquellen/
+
+# Unter Sonstiges/ wird ... sonstiges eben abgespeichert.
+Sonstiges/
 
 # Das PDF mitspeichern oder nicht?
 # *.pdf
