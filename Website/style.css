@@ -172,7 +172,7 @@ h4 a:hover { color: #ef4034; text-decoration: none; }
 /* = Header
 /*-------------------------------------------------*/
 #header {
-	background: #fff;
+	/*background: #fff;*/
 	margin: 20px auto;
 	position: relative;
 	width: 920px;
@@ -183,7 +183,7 @@ h4 a:hover { color: #ef4034; text-decoration: none; }
 #logo a:hover { color: #ef4034; }
 
 #logo {
-	height:200px;
+	/*height:100px;*/
 	padding:10px;
 }
 
@@ -227,7 +227,7 @@ h4 a:hover { color: #ef4034; text-decoration: none; }
 	-webkit-border-radius: 0px 0px 2px 2px;
 	border-radius: 0px 0px 2px 2px;
 	width: 100%;
-	background-color: #99CC00;
+	background-color: #004d79;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)),to(rgba(0, 0, 0, 0.30)));
 }
 
@@ -312,12 +312,11 @@ h4 a:hover { color: #ef4034; text-decoration: none; }
 
 /*footer bottom*/
 #footer-bottom{
-	background:#212121;
-	border: 1px solid #000;
+	background:#fac200;
 	border-bottom: 0px;
 	margin: 0;
 	margin-top: 10px;
-	padding: 10px 30px;
+	padding: 10px 20px;
 	overflow: hidden;
 }
 #vision {
