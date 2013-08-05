@@ -1,0 +1,334 @@
+ /*
+Authors: Stefan Waidele, Matthias Vongerichten
+*/
+
+/*-----------------------------------------------------------------------------------*
+/* = Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+/*-----------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: Calibri;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	background-color: #eee;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+
+/* Block elements */
+header, hgroup, footer, section, article, aside {
+	display: block;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = Body, Common Classes & Wrap
+/*-----------------------------------------------------------------------------------*/
+
+body {
+	background: #C4AA8B; /*C2945F,C4AA8B,   */
+	border-top: 5px solid #444;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+	color: #a0160d;
+}
+
+p { margin: 0 0 1em }
+p img { margin:5px;}
+strong { font-weight: 700 }
+em { font-style: italic }
+pre{
+	margin: 20px 0;
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 10px;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+blockquote{
+	border-left: 4px solid #ccc;
+	padding-left: 20px;
+    margin: 30px 0px;
+}
+.clear { clear: both }
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+}
+* html .clearfix{ zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.remove-margin { margin-right: 0 !important }
+
+/*-----------------------------------------------------------------------------------*
+/* = Structure
+/*-----------------------------------------------------------------------------------*/
+
+#wrap{
+	background:#fff;
+	margin: 0 auto;
+	width: 890px;
+	padding: 80px 15px 40px;
+	box-shadow: 10px 10px 0px 5px #000;
+	-webkit-box-shadow: 0px 0px 10px 0px #000;
+	/*-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;*/
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = Headings
+/*-----------------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4 {
+    color: #333;
+    line-height: 1.5em;
+	font-weight: bold;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+}
+h2 { font-size: 18px }
+h3 { font-size: 16px }
+h4 { font-size: 14px; }
+h2,
+h3,
+h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a { color: #333 }
+h2 a:hover,
+h3 a:hover,
+h4 a:hover { color: #ef4034; text-decoration: none; }
+
+
+/*-------------------------------------------------*
+/* = Header
+/*-------------------------------------------------*/
+#header {
+	background: #fff;
+	margin: 20px auto;
+	position: relative;
+	width: 920px;
+	/*padding-bottom: 40px;*/
+	/*border-bottom: 1px solid #ddd;*/
+}
+
+#logo a:hover { color: #ef4034; }
+
+#logo {
+	height:200px;
+	padding:10px;
+}
+
+#logo #main {
+	float:left;
+}
+
+#logo #certificates {
+	/*float:left;*/
+	/*padding:0px 10px;*/
+	height:200px;
+	/*overflow:hidden;*/
+	margin-left:420px;
+}
+
+#certificates li {
+	line-height:100px;
+	float:left;
+	width:33%;
+	text-align:center;
+}
+
+#certificates li img {
+	vertical-align:middle;
+}
+
+/*-------------------------------------------------*
+/* =  Navigation
+/*-------------------------------------------------*/
+#nav {
+	position: relative;
+	float:left;
+	top: 40px;
+	z-index:999;
+	/*bottom: 20px;*/
+	height:auto;
+	margin: 0px 0px 0px -10px;
+	padding: 0px 10px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .08);
+	-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, .08);
+	-webkit-border-radius: 0px 0px 2px 2px;
+	border-radius: 0px 0px 2px 2px;
+	width: 100%;
+	background-color: #99CC00;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)),to(rgba(0, 0, 0, 0.30)));
+}
+
+#nav ul {
+	
+	
+}
+
+#nav li {
+    float: left;
+    position: relative;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin:0 5px;
+	vertical-align:baseline;
+	font-weight:normal;
+	color: #fff;
+}
+
+#nav li a {
+    text-decoration: underline;
+}
+#nav li a:active {
+	color:#fff;
+}
+
+.corner-left {
+	width: 0px; 
+	height: 0px;
+	position: absolute;
+	left: 0px;
+	top: -10px;
+	border-top: 10px solid transparent;
+	border-bottom: 0px solid transparent; 
+	border-right: 10px solid #222222;
+	}
+.corner-right {
+	width: 0px; 
+	height: 0px;
+	position: absolute;
+	right: 0px;
+	top: -10px;
+	border-top: 10px solid transparent;
+	border-bottom: 0px solid transparent; 
+	border-left: 10px solid #222222;
+	}
+
+/*-----------------------------------------------------------------------------------*/
+/* = Home
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*
+/* = Footer
+/*-----------------------------------------------------------------------------------*/
+#footer-wrap{
+	width: 100%;
+	background: #333;
+	margin-bottom: -20px;
+}
+#footer{
+	width: 920px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #7f7f7f;
+}
+#footer a{
+	color: #fff;
+	text-decoration: none;
+}
+#footer a:hover{
+	color: #fee825;
+}
+
+/*footer bottom*/
+#footer-bottom{
+	background:#212121;
+	border: 1px solid #000;
+	border-bottom: 0px;
+	margin: 0;
+	margin-top: 10px;
+	padding: 10px 30px;
+	overflow: hidden;
+}
+#vision {
+	float: left;
+	width: 600px;
+    font-size: 10px;
+	color:#666;
+}
+#contact{
+	width: 200px;
+	float: right;
+	font-size: 10px;
+	text-align: right;
+}
