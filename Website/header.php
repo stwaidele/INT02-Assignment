@@ -11,11 +11,11 @@
 
 </head>
 <body>
-
+<div id="wrap">
 <div id="header">
 	<div id="logo" class="clearfix">
 		<div id="main">
-			<img src="img/deinbus_transparent.png" width="400px"/>
+			<img id="logo" src="img/deinbus_transparent.png"/>
 		</div>
 	</div>      
 	<div id="nav">
