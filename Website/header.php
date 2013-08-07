@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Amsterdam</title>
+<title>DeinBus</title>
 
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="" />
@@ -24,6 +24,7 @@
 			<li><a>bringen</a></li>
 			<li>dich an's</li>
 			<li><a>Ziel</a></li>
+            <li class="right"><a>Impressum</a></li>
 		<ul>
 		<span class="corner-left"></span>
 		<span class="corner-right"></span>
