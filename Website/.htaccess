@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^\.htaccess$ - [F]
+RewriteBase /int02
+
+RewriteRule ^reiseziele/([-0-9a-z]*)$ reiseziele/$1.php

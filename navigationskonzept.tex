@@ -1,31 +1,39 @@
 \section{Navigationskonzept - MV}
 
-\textsc{Matthias Vongerichten bzw. Stefan Waidele}
+\textsc{Matthias Vongerichten}
 
 \subsection{Techniche Umsetzung einheitlicher Navigation}
 
-Eine Zentrale PHP-Datei liest in die einheitliche Struktur die Details der Seite ein. Parameterübergabe in der URL mit Apache Mod-Rewrite (wg. SEO).
+Für jede Seite existiert eine PHP-Datei (Content) mit dem jeweiligen Inhalt, die außerdem den Header und den Footer einbindet. Header und Footer werden somit für alle Seiten vereinheitlicht dargestellt und können zentral bearbeitet werden.
 
 \subsection{Seitenhierarchie}
 
-Nicht zu tief.
+Die Website besteht aus max. 2 Ebenen. Lediglich die Reisedetails gehören der 2.ten Ebene an. Auf diese gelangt man über die Reiseziele.
 
-\subsection{Menüstruktur}
+\subsection{Hauptmenü}
 
-...
+Das Hauptmenü ist im Header angesiedelt und beinhaltet nur Seiten der Ebene 1.
 
 \subsection{Breadcrumb Navigation}
 
-Jedenfalls mit deutscher Überschrift.
+Zur besseren Orientierung wird über dem Titel einer Seite eine "`Brotkrümel"'-Navigation angezeigt. Diese ist im Content angesiedelt.
 
 \subsection{Related Pages}
 
-Je Reiseziel ein Abschnitt mit interessanten externen Links
+Je Reiseziel werden in einem gesonderten Abschnitt Hyperlinks zu relevanten Internetseiten angezeigt. Diese beziehen sich immer auf die ausgewählte Reise und werden daher im Content realisiert.
 
-\subsection{Suchmaschinenoptimierung}
+\subsection{Suchmaschinenoptimierung - SEO}
 
-META-Tags, Verweis auf redaktionelles Konzept für Content-Strategie etc.
+Um die Popularität der Site zu erhöhen werden heutzutage kaum noch META-tags verwendet. Sinnvoll sind diese nur noch als Vorgabe des Beschreibungstextes in den Suchergebnissen  ("`description"'-tag) und bei einer gewünschten Einschränkung der Suchmaschinen-Robots ("`robots"'-tag). Da eine Einschränkung der Suchmaschinen nicht erwünscht ist, sollte lediglich das "`description"'-tag verwendet werden.
 
-\subsection{Noch Konzept...}
+Um die Relevanz der Site zu erhöhen, sollte(n)
 
-...
+\begin{itemize}
+	\item der Inhalt regelmäßig aktualisiert werden
+	\item die Reisen ausführlich beschrieben sein
+	\item dafür gesorgt werden, dass die Website auf anderen, qualitativ hochwertigen Seiten verlinkt wurde (Backlinks)
+	\item es die Möglichkeit geben Seiten zu teilen (Facebook, Google+ usw.)
+\end{itemize}
+
+
+
