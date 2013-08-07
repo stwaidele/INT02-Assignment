@@ -7,6 +7,8 @@ Sonstiges/
 # Das PDF mitspeichern oder nicht?
 # *.pdf
 
+Website/_notes
+
 #################
 ## LaTeX
 #################
