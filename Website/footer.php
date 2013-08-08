@@ -1,10 +1,6 @@
-<div id="footer">
-		<div id="vision">
-			Vision<br />
-		</div>
-		<div id="contact">
-		</div>
-    </div>
+﻿<div id="footer">
+	<a>Impressum</a> | <a>FAQ</a> | <a>Sitemap</a> | © Copyright DeinBus 2013
+</div>
 </div>
 
 
