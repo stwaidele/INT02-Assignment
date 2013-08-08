@@ -57,6 +57,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/int02/header.php');
 			<li>freie Benutzung der Hotelanlage mit Wellnessbereich</li>
 			<li>Kaffee und Kuchen bei der Anreise</li>
 		</ul>
+		<div class="sidebar-topic">Verwandte Seiten<span class="corner-right"></span></div>
+		<ul>
+			<li><a href="https://www.canal.nl/de">Grachtenfahrt</a></li>
+			<li><a href="http://www.parkhotel.nl/rooms-and-suites/superior-rooms">Hotel</a></li>
+			<li><a href="http://www.amsterdam.info/de/sehenswuerdigkeiten/" >Amsterdam.info</a></li>
+		</ul>
 		<div class="sidebar-topic">Preis<span class="corner-right"></span></div>
 		<p>350€ pro Person</p>
 		<div id="booking" class="sidebar-topic"><a>Buchen</a><span class="corner-right"></span></div>
