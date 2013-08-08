@@ -34,10 +34,11 @@
 	</div>  
 	<div id="nav">
 		<ul>
-			<li><a>Reiseziele</a></li>
-			<li><a>Die Busse</a></li>
-			<li><a>Über uns</a></li>
-			<li><a>Kontakt</a></li>
+        	<li><a href="/int02/index.php" title="Startseite">Start</a></li>
+			<li><a href="/int02/reiseziele/index.php" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a></li>
+            			<li><a href="/int02/busse.php" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
+			<li><a href="/int02/wirueberuns.php" title="Lernen Sie Ihre Reisebegleitung kennen.">Über uns</a></li>
+			<li><a href="/int02/kontakt.php" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
 		<ul>
 		<span class="corner-left"></span>
 		<span class="corner-right"></span>

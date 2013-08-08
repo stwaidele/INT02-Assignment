@@ -211,12 +211,23 @@ h4 {
 	font-size: 1.1em;
 	color: #fff;
 }
-
 #nav li a {
 	border-right:1px solid #fff;
 	padding:0 10px;
+	color: white;
+	text-decoration: none;	
+}
+#nav li a:visited {
+	color: white;
+}
+#nav li a:hover {
+	color: white;
+	text-decoration: underline;
 }
 
+
+
+/* Ribbons */
 
 .corner-left {
 	width: 0px; 
