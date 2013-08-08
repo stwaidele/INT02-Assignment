@@ -14,11 +14,11 @@ NormalPos.top=26
 NormalPos.right=1500
 NormalPos.bottom=698
 Class=LaTeXView
-Document=anforderungsanalyse.tex
+Document=designkonzept.tex
 
 [Frame0_View0,0]
-TopLine=7
-Cursor=1434
+TopLine=15
+Cursor=3400
 
 [Frame1]
 Flags=0
@@ -36,7 +36,7 @@ Document=Einleitung.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=1299
+Cursor=1842
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1500
 NormalPos.bottom=698
 Class=LaTeXView
-Document=Deckblatt.tex
+Document=anforderungsanalyse.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=628
+TopLine=6
+Cursor=1434
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=26
 NormalPos.right=1500
 NormalPos.bottom=698
 Class=LaTeXView
-Document=.gitignore
+Document=Deckblatt.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=273
+Cursor=628
 
 [Frame4]
 Flags=0
@@ -86,13 +86,31 @@ NormalPos.top=26
 NormalPos.right=1500
 NormalPos.bottom=698
 Class=LaTeXView
-Document=Grundlagen.tex
+Document=.gitignore
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=1133
+Cursor=273
 
 [Frame5]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1500
+NormalPos.bottom=698
+Class=LaTeXView
+Document=Grundlagen.tex
+
+[Frame5_View0,0]
+TopLine=0
+Cursor=0
+
+[Frame6]
 Flags=0
 ShowCmd=1
 MinPos.x=-1
@@ -106,27 +124,9 @@ NormalPos.bottom=698
 Class=BibTeXView
 Document=Literatur.bib
 
-[Frame5_View0,0]
-TopLine=0
-Cursor=575
-
-[Frame6]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1500
-NormalPos.bottom=698
-Class=LaTeXView
-Document=designkonzept.tex
-
 [Frame6_View0,0]
 TopLine=0
-Cursor=336
+Cursor=575
 
 [Frame7]
 Flags=0
@@ -311,3 +311,4 @@ Cursor=52
 [SessionInfo]
 FrameCount=17
 ActiveFrame=0
+
