@@ -1,5 +1,6 @@
 <?php 
 $title="Home";
+$desc="Europaweite Städtereisen zum unschlagbaren Preis - Komfort-Hotels - Premium Class Busse";
 include('header.php'); 
 ?>
 <div id="inner-wrapper" class="clearfix">

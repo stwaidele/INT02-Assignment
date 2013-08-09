@@ -66,7 +66,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/INT02-Assignment/Website/header.php');
 			<li><a href="http://www.amsterdam.info/de/sehenswuerdigkeiten/" >Amsterdam.info</a></li>
 		</ul>
 		<div class="sidebar-topic">Preis<span class="corner-right"></span></div>
-		<p>350€ pro Person</p>
+		<ul>
+			<li>350€ p. P.</li>
+			<li>300€ p. P. für Gruppen ab 10 Personen</li> 
+		</ul>
 		<div id="booking" class="sidebar-topic"><a>Jetzt buchen</a><span class="corner-right"></span></div>
 	</div>
 	<div class="clear"></div>

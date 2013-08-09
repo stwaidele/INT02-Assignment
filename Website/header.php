@@ -5,7 +5,7 @@
 
 <!-- Meta Tags -->
 <meta charset="utf-8" />
-<meta name="description" content="Europaweite Städtereisen ab Süddeutschland zu unschlagbaren Preisen">
+<meta name="description" content="<?php echo $desc; ?>">
 
 <!-- Stylesheet & Favicon -->
 <link rel="stylesheet" type="text/css" href="/INT02-Assignment/Website/style.css" />
@@ -29,7 +29,7 @@
 	</div>
 	<div id="logo" class="clearfix">
 		<div id="main">
-			<img id="logo" src="/INT02-Assignment/Website/img/deinbus_transparent.png"/>
+			<a href="/INT02-Assignment/Website" title="Hier geht's zur Startseite"><img id="logo" alt="DeinBus.de Logo" src="/INT02-Assignment/Website/img/deinbus_transparent.png"/></a>
 		</div>
 	</div>  
 	<div id="nav">
@@ -37,7 +37,7 @@
         	<li><a href="/INT02-Assignment/Website" title="Startseite">Start</a></li>
 			<li><a href="/INT02-Assignment/Website/reiseziele" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a></li>
             			<li><a href="/INT02-Assignment/Website/busse" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
-			<li><a href="/INT02-Assignment/Website/wirueberuns" title="Lernen Sie Ihre Reisebegleitung kennen.">Über uns</a></li>
+			<li><a href="/INT02-Assignment/Website/wirueberuns" title="Lernen Sie Ihre Reisebegleitung kennen">Über uns</a></li>
 			<li><a href="/INT02-Assignment/Website/kontakt" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
 		<ul>
 		<span class="corner-left"></span>

@@ -1,5 +1,6 @@
 <?php 
 $title="Reiseziele";
+$desc = "Übersicht über unsere Reiseziele - Deutschland - Europa";
 include('../header.php'); 
 ?>
 <div id="inner-wrapper" class="clearfix">
