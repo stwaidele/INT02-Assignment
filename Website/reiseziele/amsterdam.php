@@ -1,7 +1,7 @@
 ﻿<?php 
 $title = "Amsterdam";
 $desc = "4-Tage Busreise nach Amsterdam - Superior Hotel - Grachtenfahrten";
-include($_SERVER['DOCUMENT_ROOT'].'/int02/header.php'); 
+include($_SERVER['DOCUMENT_ROOT'].'/INT02-Assignment/Website/header.php'); 
 ?>
 <div id="inner-wrapper">
 	<div id="content" class="clearfix">
@@ -9,11 +9,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/int02/header.php');
 			<a>Home</a> > <a>Reiseziele</a> > <a>Niederlande</a>
 		</div>
 		<h1>Amsterdam</h1>
-		<img alt ="Flussufer in Amsterdam" src="/int02/img/amsterdam1.jpg" />
+		<img alt ="Flussufer in Amsterdam" src="../img/amsterdam1.jpg" />
 		<p>Die Hafenstadt Amsterdam (niederländisch  Amsterdam?/i) ist die Hauptstadt und einwohnerstärkste Stadt der Niederlande. Amsterdam hat 799.345 Einwohner (Stand: 1. Januar 2013)[2] und als Agglomeration Groot-Amsterdam etwa 1,3 Millionen (August 2012)[3].</p>
 		
 		<p>Im Gro?raum Amsterdam, der den nördlichen Teil des niederländischen Verdichtungsraumes Randstad ausmacht, leben etwa 2,4 Millionen Menschen (2012)[4]. Auch wenn sich der Regierungssitz des Landes sowie die Königsresidenz im 60 Kilometer entfernten Den Haag befinden, ist Amsterdam seit 1983 gemäß niederländischer Verfassung die Hauptstadt der Niederlande.[5] Amsterdam liegt in der Provinz Nordholland, an der Mündung der Amstel und des IJ in das IJsselmeer. Amsterdam ist durch den Noordzeekanaal mit der Nordsee verbunden und durch die zahlreichen Grachten weltberühmt.</p>
-		<img alt ="Fluss in Amsterdam" src="/int02/img/amsterdam2.jpg" />
+		<img alt ="Fluss in Amsterdam" src="../img/amsterdam2.jpg" />
 		<h2>Tag 1</h2>
 		<p>Die Fahrt nach Amsterdam startet gegen Abend, die genaue Abfahrtszeit variiert je nach Abfahrtsort</p>
 		<h2>Tag 2</h2>
@@ -73,5 +73,5 @@ include($_SERVER['DOCUMENT_ROOT'].'/int02/header.php');
 
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/int02/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/INT02-Assignment/Website/footer.php'); ?>
 
