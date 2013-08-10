@@ -64,9 +64,9 @@ include('../header.php');
 		</ul>
 		<div class="sidebar-topic">Verwandte Seiten<span class="corner-right"></span></div>
 		<ul>
-			<li><a href="https://www.canal.nl/de">Grachtenfahrt</a></li>
-			<li><a href="http://www.parkhotel.nl/rooms-and-suites/superior-rooms">Hotel</a></li>
-			<li><a href="http://www.amsterdam.info/de/sehenswuerdigkeiten/" >Amsterdam.info</a></li>
+			<li><a href="https://www.canal.nl/de">Super-Infos</a></li>
+			<li><a href="http://www.parkhotel.nl/rooms-and-suites/superior-rooms">Tolle Geschichten</a></li>
+			<li><a href="http://www.amsterdam.info/de/sehenswuerdigkeiten/" >Firmeninfos</a></li>
 		</ul>
 		<div id="booking" class="sidebar-topic"><a>Jetzt buchen</a><span class="corner-right"></span></div>
 	</div>

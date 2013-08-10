@@ -290,6 +290,27 @@ h4 {
 /* = Responsive Design
 /*-----------------------------------------------------------------------------------*/
 
+@media only screen and (max-width: 480px){
+
+/* Handy, hochkant */
+
+	#wrap{
+	margin: 0 auto;
+	width:90%;
+	}
+	
+	p,ol,ul {
+		line-height:1.1;
+	}
+	img {
+		width=100%;
+	}
+	#logo {
+		width:100%;
+	}
+}
+
+
 @media only screen and (min-width: 480px){
 
 /* BEAMER */
@@ -302,9 +323,9 @@ h4 {
 	p,ol,ul {
 		line-height:1.1;
 	}
-.titel {
-	width=100%;
-}
+	.titel {
+		width=100%;
+	}
 
 }
 
@@ -324,13 +345,13 @@ h4 {
 		width:70%;
 		float:left;
 	}
-.titel {
-	width=100%;
-}
-
+	
 	#content img {
-	float:left;
-	width:250px;
+		float:left;
+		width:250px;
+	}
+	.titel {
+		width=100%;
 	}
 
 }

@@ -6,6 +6,7 @@
 <!-- Meta Tags -->
 <meta charset="utf-8" />
 <meta name="description" content="<?php echo $desc; ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Stylesheet & Favicon -->
 <link rel="stylesheet" type="text/css" href="/style.css" />
@@ -24,8 +25,8 @@
 <div id="wrap">
 <div id="header">
 	<div id="social-bar">
-		<div class="fb-like" data-href="http://deinbus.de/test" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
-		<g:plusone href="http://deinbus.de/test" size="medium"></g:plusone>
+		<div class="fb-like" data-href="http://int02.10100.de" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+		<g:plusone href="http://int02.10100.de" size="medium"></g:plusone>
 	</div>
 	<div id="logo" class="clearfix">
 		<div id="main">
