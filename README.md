@@ -1,47 +1,39 @@
-INT02-Assignment
+TODO
 ================
 
-TODO's
-
------------------------------------------------------------
 #ASSIGNMENT
------------------------------------------------------------
 
 ##Deckblatt
 
-[ ]Daten von Matthias ergänzen
+* Daten von Matthias ergänzen  
 
 ##Anforderungsanalyse
 
-[ ]Genaue Zieldefinition (5% in einem Jahr o.ä.)
-[ ]Usability (AIDA, usw..)
-  [ ]Mehrsprachigkeit (Englisch)
-[ ]Ergonomie (Typische Stichwörter erwähnen)
+* Genaue Zieldefinition (5% in einem Jahr o.ä.)  
+* Usability (AIDA, usw..)  
+ * Mehrsprachigkeit (Englisch)  
+* Ergonomie (Typische Stichwörter erwähnen)  
 
 ##Redaktionelles Konzept
 
-[ ]Rechtliches (IMPRESSUM)
-[ ]AGB
-[ ]Gästebuch (oder Integration Bewertungsportal?)
+* Rechtliches (IMPRESSUM)  
+* AGB  
+* Gästebuch (oder Integration Bewertungsportal?)  
 
 ##Designkonzept
 
-[ ]Bilder in verschiedenen Auflösungen ablegen (da zu lange Ladezeiten bei mobile devices)
+* Bilder in verschiedenen Auflösungen ablegen (da zu lange Ladezeiten bei mobile devices)  
 
 ##Navigationskonzept
 
-[ ]SITEMAP hinzufügen
+* SITEMAP hinzufügen  
 
------------------------------------------------------------
+
 #WEBSEITE
------------------------------------------------------------
 
-[ ]h1 auf Reiseziele auf h2 ändern
-
-[ ]w3c validation hinzufügen
-
-[ ]Links wieder mod_rewrite-tauglich machen (kein *.php)
-
-MV[ ]Kontakformular realisieren
-    [ ]Tabelle
-    [ ]JS
+* h1 auf Reiseziele auf h2 ändern
+* w3c validation hinzufügen
+* Links wieder mod_rewrite-tauglich machen (kein *.php)  
+* Kontakformular realisieren  
+ * Tabelle  
+ * JS  
