@@ -7,7 +7,7 @@ include('../header.php');
 
 	<div id="content">
 		<div id="breadcrump">
-			<a href="/INT02-Assignment/Website/index.php">Start</a> > Reiseziele
+			<a href="/index.php">Start</a> > Reiseziele
 		</div>
 		<h1>Reiseziele</h1>
 		<p>Fahren Sie mit uns an die schönsten Orte in Deutschland und Europa</p>
@@ -31,7 +31,7 @@ include('../header.php');
 		</div>
 		<h1>Städtereisen Europa</h1>
 		<div class="excerpt clearfix">
-			<h2><a href="/INT02-Assignment/Website/reiseziele/amsterdam">Amsterdam</a></h2>
+			<h2><a href="/reiseziele/amsterdam.php">Amsterdam</a></h2>
 			<img src="../img/amsterdam1.jpg" alt="Flussufer in Amsterdam" />
 			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna numy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>

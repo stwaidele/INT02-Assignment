@@ -10,6 +10,7 @@ include('header.php');
 			<a>Home</a>
 		</div>
 		<h1>Willkommen</h1>
+        <img src="/img/start.jpg" alt="Titelbild" class="titel" />
 		<p> Dies ist ein Testtext</p>
 	</div>
 	<div class="clear"></div>

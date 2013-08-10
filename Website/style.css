@@ -136,7 +136,10 @@ h4 {
 #content img {
 	margin:0 10px 10px 0;
 	width:100%;
-	}
+}
+.titel {
+	width=100%;
+}
 
 /*-----------------------------------------------------------------------------------*
 /* = Sidebar
@@ -217,6 +220,7 @@ h4 {
 	color: white;
 	text-decoration: none;	
 }
+
 #nav li a:visited {
 	color: white;
 }
@@ -269,7 +273,6 @@ h4 {
 	color: #7f7f7f;
 }
 
-
 /*-----------------------------------------------------------------------------------*
 /* = Reisedetails
 /*-----------------------------------------------------------------------------------*/
@@ -277,6 +280,10 @@ h4 {
 #booking   {
 	background: #fac200;
 	color: #004d79;
+}
+
+.titel {
+	width=100%;
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -295,6 +302,9 @@ h4 {
 	p,ol,ul {
 		line-height:1.1;
 	}
+.titel {
+	width=100%;
+}
 
 }
 
@@ -314,10 +324,15 @@ h4 {
 		width:70%;
 		float:left;
 	}
+.titel {
+	width=100%;
+}
+
 	#content img {
 	float:left;
 	width:250px;
 	}
+
 }
 
 @media only screen and (min-width: 960px){
@@ -332,4 +347,9 @@ h4 {
 	p,ol,ul {
 		line-height:1.3;
 	}
+.titel {
+	width=100%;
 }
+
+}
+

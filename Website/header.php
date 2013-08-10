@@ -8,7 +8,7 @@
 <meta name="description" content="<?php echo $desc; ?>">
 
 <!-- Stylesheet & Favicon -->
-<link rel="stylesheet" type="text/css" href="/INT02-Assignment/Website/style.css" />
+<link rel="stylesheet" type="text/css" href="/style.css" />
 
 </head>
 <body>
@@ -29,16 +29,18 @@
 	</div>
 	<div id="logo" class="clearfix">
 		<div id="main">
-			<a href="/INT02-Assignment/Website" title="Hier geht's zur Startseite"><img id="logo" alt="DeinBus.de Logo" src="/INT02-Assignment/Website/img/deinbus_transparent.png"/></a>
+			<a href="/" title="Hier geht's zur Startseite"><img id="logo" 
+            alt="DeinBus.de Logo" 
+            src="/img/deinbus_transparent.png"/></a>
 		</div>
 	</div>  
 	<div id="nav">
 		<ul>
-        	<li><a href="/INT02-Assignment/Website" title="Startseite">Start</a></li>
-			<li><a href="/INT02-Assignment/Website/reiseziele" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a></li>
-            			<li><a href="/INT02-Assignment/Website/busse" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
-			<li><a href="/INT02-Assignment/Website/wirueberuns" title="Lernen Sie Ihre Reisebegleitung kennen">Über uns</a></li>
-			<li><a href="/INT02-Assignment/Website/kontakt" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
+        	<li><a href="/" title="Startseite">Start</a></li>
+			<li><a href="/reiseziele/index.php" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a></li>
+            <li><a href="/busse.php" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
+			<li><a href="/wirueberuns.php" title="Lernen Sie Ihre Reisebegleitung kennen">Über uns</a></li>
+			<li><a href="/kontakt.php" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
 		<ul>
 		<span class="corner-left"></span>
 		<span class="corner-right"></span>

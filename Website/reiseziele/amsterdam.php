@@ -1,12 +1,12 @@
 ﻿<?php 
 $title = "Amsterdam";
 $desc = "4-Tage Busreise nach Amsterdam - Superior Hotel - Grachtenfahrten";
-include($_SERVER['DOCUMENT_ROOT'].'/INT02-Assignment/Website/header.php'); 
+include($_SERVER['DOCUMENT_ROOT'].'/header.php'); 
 ?>
 <div id="inner-wrapper">
 	<div id="content" class="clearfix">
 		<div id="breadcrump">
-			<a>Home</a> > <a>Reiseziele</a> > <a>Niederlande</a>
+			<a>Home</a> > <a>Reiseziele</a> > Amsterdam
 		</div>
 		<h1>Amsterdam</h1>
 		<img alt ="Flussufer in Amsterdam" src="../img/amsterdam1.jpg" />
