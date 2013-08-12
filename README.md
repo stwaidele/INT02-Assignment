@@ -3,10 +3,6 @@ TODO
 
 #ASSIGNMENT
 
-##Deckblatt
-
-* Daten von Matthias ergänzen  
-
 ##Anforderungsanalyse
 
 * Genaue Zieldefinition (5% in einem Jahr o.ä.)  
@@ -18,15 +14,25 @@ TODO
 
 * Rechtliches (IMPRESSUM)  
 * AGB  
-* Gästebuch (oder Integration Bewertungsportal?)  
+* Gästebuch (oder Integration Bewertungsportal?)?  
+
+##Navigationskonzept
+
+* SITEMAP hinzufügen  
 
 ##Designkonzept
 
 * Bilder in verschiedenen Auflösungen ablegen (da zu lange Ladezeiten bei mobile devices)  
 
-##Navigationskonzept
+##Beispielseite Kontaktformular
 
-* SITEMAP hinzufügen  
+* hinzufügen
+
+##Fazit
+
+* Eingehen auf einige Anforderungen
+ * Z.b. kurze Ladezeiten durch online tools belegen
+ * einfache kontaktaufnahme durch anzahl notwendiger klicks belegen
 
 
 #WEBSEITE
