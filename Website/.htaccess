@@ -1,6 +1,7 @@
 RewriteEngine on
 RewriteRule ^\.htaccess$ - [F]
-RewriteBase /INT02-Assignment/Website/
+RewriteBase /
 
 RewriteRule ^reiseziele/([-0-9a-z]*)$ reiseziele/$1.php
-RewriteRule ^/([-0-9a-z]*)$ /$1.php
+RewriteRule ^([-0-9a-z]*)$ $1.php
+RewriteRule ^reiseziele/([-0-9a-z]*)/buchen$ kontakt.php?reise=$1

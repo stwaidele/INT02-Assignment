@@ -37,9 +37,5 @@ TODO
 
 #WEBSEITE
 
-* h1 auf Reiseziele auf h2 ändern
 * w3c validation hinzufügen
-* Links wieder mod_rewrite-tauglich machen (kein *.php)  
-* Kontakformular realisieren  
- * Tabelle  
- * JS  
+

@@ -5,11 +5,13 @@
 
 <!-- Meta Tags -->
 <meta charset="utf-8" />
-<meta name="description" content="<?php echo $desc; ?>">
+<meta name="description" content="<?php echo $desc; ?>" />
+	<!-- Setup of the viewport for mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Stylesheet & Favicon -->
 <link rel="stylesheet" type="text/css" href="/style.css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 </head>
 <body>
@@ -38,10 +40,10 @@
 	<div id="nav">
 		<ul>
         	<li><a href="/" title="Startseite">Start</a></li>
-			<li><a href="/reiseziele/index.php" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a></li>
-            <li><a href="/busse.php" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
-			<li><a href="/wirueberuns.php" title="Lernen Sie Ihre Reisebegleitung kennen">Über uns</a></li>
-			<li><a href="/kontakt.php" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
+			<li><a href="/reiseziele" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a></li>
+            <li><a href="/busse" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
+			<li><a href="/wirueberuns" title="Lernen Sie Ihre Reisebegleitung kennen">Über uns</a></li>
+			<li><a href="/kontakt" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
 		<ul>
 		<span class="corner-left"></span>
 		<span class="corner-right"></span>

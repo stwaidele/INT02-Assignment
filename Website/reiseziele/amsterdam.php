@@ -6,14 +6,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/header.php');
 <div id="inner-wrapper">
 	<div id="content" class="clearfix">
 		<div id="breadcrump">
-			<a>Home</a> > <a>Reiseziele</a> > Amsterdam
+			<a href="/" title="Zurück zur Startseite" >Start</a> > <a href="/reiseziele" title="Reiseziele" >Reiseziele</a> > Amsterdam
 		</div>
 		<h1>Amsterdam</h1>
-		<img alt ="Flussufer in Amsterdam" src="../img/amsterdam1.jpg" />
+		<img alt ="Flussufer in Amsterdam" src="/img/amsterdam1.jpg" />
 		<p>Die Hafenstadt Amsterdam (niederländisch  Amsterdam?/i) ist die Hauptstadt und einwohnerstärkste Stadt der Niederlande. Amsterdam hat 799.345 Einwohner (Stand: 1. Januar 2013)[2] und als Agglomeration Groot-Amsterdam etwa 1,3 Millionen (August 2012)[3].</p>
 		
 		<p>Im Gro?raum Amsterdam, der den nördlichen Teil des niederländischen Verdichtungsraumes Randstad ausmacht, leben etwa 2,4 Millionen Menschen (2012)[4]. Auch wenn sich der Regierungssitz des Landes sowie die Königsresidenz im 60 Kilometer entfernten Den Haag befinden, ist Amsterdam seit 1983 gemäß niederländischer Verfassung die Hauptstadt der Niederlande.[5] Amsterdam liegt in der Provinz Nordholland, an der Mündung der Amstel und des IJ in das IJsselmeer. Amsterdam ist durch den Noordzeekanaal mit der Nordsee verbunden und durch die zahlreichen Grachten weltberühmt.</p>
-		<img alt ="Fluss in Amsterdam" src="../img/amsterdam2.jpg" />
+		<img alt ="Fluss in Amsterdam" src="/img/amsterdam2.jpg" />
 		<h2>Tag 1</h2>
 		<p>Die Fahrt nach Amsterdam startet gegen Abend, die genaue Abfahrtszeit variiert je nach Abfahrtsort</p>
 		<h2>Tag 2</h2>
@@ -70,11 +70,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/header.php');
 			<li>350€ p. P.</li>
 			<li>300€ p. P. für Gruppen ab 10 Personen</li> 
 		</ul>
-		<div id="booking" class="sidebar-topic"><a>Jetzt buchen</a><span class="corner-right"></span></div>
+		<div id="booking" class="sidebar-topic"><a href="amsterdam/buchen">Buchungsanfrage</a><span class="corner-right"></span></div>
 	</div>
 	<div class="clear"></div>
 
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/INT02-Assignment/Website/footer.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/footer.php'); ?>
 
