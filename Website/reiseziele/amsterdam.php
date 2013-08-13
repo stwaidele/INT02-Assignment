@@ -70,7 +70,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/header.php');
 			<li>350€ p. P.</li>
 			<li>300€ p. P. für Gruppen ab 10 Personen</li> 
 		</ul>
-		<div id="booking" class="sidebar-topic"><a href="amsterdam/buchen">Buchungsanfrage</a><span class="corner-right"></span></div>
+		<div id="booking" class="sidebar-topic"><a href="amsterdam/buchungsanfrage">Buchungsanfrage</a><span class="corner-right"></span></div>
 	</div>
 	<div class="clear"></div>
 
