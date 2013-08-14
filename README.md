@@ -12,7 +12,6 @@ TODO
 
 ##Redaktionelles Konzept
 
-* Rechtliches (IMPRESSUM)  
 * AGB  
 * Gästebuch (oder Integration Bewertungsportal?)?  
 
@@ -23,10 +22,6 @@ TODO
 ##Designkonzept
 
 * Bilder in verschiedenen Auflösungen ablegen (da zu lange Ladezeiten bei mobile devices)  
-
-##Beispielseite Kontaktformular
-
-* hinzufügen
 
 ##Fazit
 
