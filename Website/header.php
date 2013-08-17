@@ -27,8 +27,8 @@
 <div id="wrap">
 <div id="header">
 	<div id="social-bar">
-		<div class="fb-like" data-href="http://int02.10100.de" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
-		<g:plusone href="http://int02.10100.de" size="medium"></g:plusone>
+		<div class="fb-like-box" data-href="https://www.facebook.com/DeinBus" data-width="200" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+		<g:plusone href="http://int02.10100.de" size="Tall"></g:plusone>
 	</div>
 	<div id="logo" class="clearfix">
 		<div id="main">

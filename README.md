@@ -10,14 +10,6 @@ TODO
  * Mehrsprachigkeit (Englisch)  
 * Ergonomie (Typische Stichwörter erwähnen)  
 
-##Redaktionelles Konzept
-
-* Facebook oder Google+ Account anlegen
-
-##Navigationskonzept
-
-* SITEMAP hinzufügen  
-
 ##Fazit
 
 * Eingehen auf einige Anforderungen

@@ -1,5 +1,5 @@
 ﻿<div id="footer">
-	<a>Impressum</a> | <a>FAQ</a> | <a>Sitemap</a> | © Copyright DeinBus 2013
+	<a>Impressum</a> | <a>AGB</a> | <a>Sitemap</a> | © Copyright DeinBus 2013
 </div>
 </div>
 
