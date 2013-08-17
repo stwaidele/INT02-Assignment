@@ -12,21 +12,16 @@ TODO
 
 ##Redaktionelles Konzept
 
-* AGB  
-* Gästebuch (oder Integration Bewertungsportal?)?  
+* Facebook oder Google+ Account anlegen
 
 ##Navigationskonzept
 
 * SITEMAP hinzufügen  
 
-##Designkonzept
-
-* Bilder in verschiedenen Auflösungen ablegen (da zu lange Ladezeiten bei mobile devices)  
-
 ##Fazit
 
 * Eingehen auf einige Anforderungen
- * Z.b. kurze Ladezeiten durch online tools belegen
+ * Z.b. kurze Ladezeiten durch online tools belegen (woorank-Auszug)
  * einfache kontaktaufnahme durch anzahl notwendiger klicks belegen
 
 
