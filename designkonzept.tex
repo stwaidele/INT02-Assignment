@@ -19,15 +19,12 @@ Dies führt zu einer hohen Wartungsfreundlichkeit der Website.
 
 \subsection{Gliederung der Seiten durch DIVs}
 
-Die in den Anfangszeiten des WWW übliche Seitengliederung durch HTML--Tabellen ist nicht mehr zeitgemäß. 
-Bei dieser Lösung bestehen erhebliche Nachteile bei der Übersichtlichkeit und der Flexibilität.
+Die in den Anfangszeiten des WWW übliche Seitengliederung durch HTML--Tabellen ist nicht mehr zeitgemäß.  Bei dieser Lösung bestehen erhebliche Nachteile bei der Übersichtlichkeit und der Flexibilität.
 Außerdem ist die Gliederung von Layouts mit dem TABLE--Tag ein Problem für den barrierefreien Zugriff mit Screenreadern.
 
-Die Gliederung des Layouts mithilfe von HTML--Frames bringt auch Nachteile mit sich -- speziell bei kleinen Bildschirmgrößen, beim Setzen von Links bzw. Lesezeichen auf Detailseiten,
-oder auch wiederum bei der Barrierefreiheit.
+Die Gliederung des Layouts mithilfe von HTML--Frames bringt auch Nachteile mit sich -- speziell bei kleinen Bildschirmgrößen, beim Setzen von Links bzw. Lesezeichen auf Detailseiten, oder auch wiederum bei der Barrierefreiheit.
 
-Die Gliederung der Seiten mit DIV-Elementen hingegen unterstützt ein rein Semantisches Markup des HTML--Codes und erleichtert somit die 
-Anzeige der Webseiten über viele verschiedene Bildschirmauflösungen bis hin zum Screenreader für Blinde.
+Die Gliederung der Seiten mit DIV-Elementen hingegen unterstützt ein rein Semantisches Markup des HTML--Codes und erleichtert somit die Anzeige der Webseiten über viele verschiedene Bildschirmauflösungen bis hin zum Screenreader für Blinde.
 
 Durch entsprechend definierte Media-Queries wird ein auf die jeweilige Bildschirmgröße optimiertes Layout (sog. Responive Layout) möglich.
 
@@ -50,11 +47,17 @@ Stylesheets gewechselt. Durch dieses responsive Layout können die verschriedenen
 
 Auf die Realisierung eines darüber hinaus "`fliesenden Layouts"' durch Breitenangaben in Prozentwerten wird zugunsten besserer Kontrolle über Layoutdetails verzichtet.
 
-\subsection{Special Effects}
+\subsection{Animationen, JavaScript und sonstige Hilfsmittel}
 
-Animationen (Dezent, evt. "`umdrehen"' bei Menü-MouseOver, Dezentes leuchten der Buchungs-Telefonnummer,...)
+Auf Animationen und andere Spezialeffekte wird zugunsten guter Lesbarkeit verzichtet. Lediglich in der Navigationsleiste werden die einzelnen Menüpunkte beim Berühren mit der Maus fablich anders hinterlegt. Dies wird mit Hilfe der CSS-Pseudoklasse ``:hover'' realisiert und bedarf somit keinem JavaScript.
+
+Für die Plausibilitätsprüfung der Eingaben im Kontaktformular bietet sich JavaScript an, da diese so vor einer Anfrage an den Webserver vorgenommen werden kann. Dies bringt für den Besucher der Website eine schnellere Reaktionszeit und entlastet gleichzeitig den Server.
 
 \subsection{Browserkompatibilität}
 
-How far back in time do we want to travell?
+Durch die Verwendung von CSS kann ein modernes und ansprechendes Design bei maximaler Browserkompatibilität realisiert werden. Auch wenn die Website nicht in allen Webbrowsern gleich aussieht, und es bei sehr alten Versionen auch zu sichtbaren Darstellungsfehlern kommen kann (siehe Screenshots im Anhang), so ist die Website trotzdem funktionsfähig. 
+
+Manche Funktionen, wie z.B. die ausklappenden Navigationsmenüs, sind in alten Browserversionen nicht zugänglich. In diesem Fall wird dann nur die Hauptkategorie angezeigt, die Unterseiten sind dann erst in einem nächsten Schritt erreichbar.
+
+Auf eine Optimierung dahingehend, auch bei alten Browsern ein identisches Surferlebniss zu bieten wird verzichtet, da der hierfür notwendige Aufwand in keinem wirtschaftlichen Verhältnis zum erzielten Nutzen stehen würde. 
 
