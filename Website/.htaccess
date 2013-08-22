@@ -2,6 +2,6 @@ RewriteEngine on
 RewriteRule ^\.htaccess$ - [F]
 RewriteBase /
 
-RewriteRule ^reiseziele/([-0-9a-z]*)$ reiseziele/$1.php
+RewriteRule ^reiseziele/([-0-9a-z]+)$ reiseziele/$1.php
 RewriteRule ^([-0-9a-z]*)$ $1.php
 RewriteRule ^reiseziele/([-0-9a-z]*)/buchungsanfrage$ kontakt.php?reise=$1
