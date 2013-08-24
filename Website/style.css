@@ -1,4 +1,4 @@
- /*
+Ôªø /*
 Authors: Stefan Waidele, Matthias Vongerichten
 */
 
@@ -60,8 +60,8 @@ table {
 
 body {
 	background: #C4AA8B;
-    font-size: 100%;
     font-family: Calibri ,Arial, Helvetica;
+	font-size:100%;
 }
 
 a:hover {
@@ -90,7 +90,7 @@ p,ol,ul {
 .remove-margin { margin-right: 0 !important }
 
 /*-----------------------------------------------------------------------------------*
-/* = ‹berschriften
+/* = √úberschriften
 /*-----------------------------------------------------------------------------------*/
 
 h1,
@@ -117,7 +117,7 @@ h4 {
 }
 
 /*-----------------------------------------------------------------------------------*
-/* = Seitenger¸st
+/* = Seitenger√ºst
 /*-----------------------------------------------------------------------------------*/
 
 #wrap{
@@ -263,14 +263,22 @@ h4 {
 /*-----------------------------------------------------------------------------------*/
 
 #footer{
-	text-align:right;
 	font-size:0.7em;
 	background-color:#fac200;
 	border-bottom: 0px;
 	margin:10px 0 0 0;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	overflow: hidden;
 	color: #7f7f7f;
+}
+
+#footer #right {
+	float:right;
+	line-height:24px;
+}
+
+#footer #right a {
+	vertical-align:bottom;
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -441,7 +449,7 @@ h4 {
 
 @media only screen and (min-width: 960px){
  
-/* Zeitgem‰ﬂer Desktop */
+/* Zeitgem√§√üer Desktop */
 
 	#wrap{
 	width:920px;
