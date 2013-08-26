@@ -2,17 +2,17 @@
 
 \textsc{Matthias Vongerichten}
 
-\subsection{Techniche Umsetzung einheitlicher Navigation}
+\subsection{Technische Umsetzung einheitlicher Navigation}
 
-Für jede Seite existiert eine PHP-Datei (Content) mit dem jeweiligen Inhalt, die außerdem den Header und den Footer einbindet. Header und Footer werden somit für alle Seiten vereinheitlicht dargestellt und können zentral bearbeitet werden.
+Für jede Seite existiert eine PHP-Datei (Content) mit dem jeweiligen Inhalt, die außerdem den Header und den Footer einbindet. Header und Footer werden somit für alle Seiten vereinheitlicht dargestellt und können zentral bearbeitet werden. 
 
 \subsection{Seitenhierarchie}
 
-Die Website besteht aus max. 2 Ebenen. Lediglich die Reisedetails gehören der 2.ten Ebene an. Auf diese gelangt man über die Reiseziele.
+Die Website besteht aus max. 2 Ebenen. Lediglich die Reisedetails gehören der zweiten Ebene an. Auf diese gelangt man über die Reiseziele.
 
 \subsection{Hauptmenü}
 
-Das Hauptmenü ist im Header angesiedelt und beinhaltet nur Seiten der Ebene 1.
+Das Hauptmenü ist im Header angesiedelt und beinhaltet ausschließlich Hyperlinks zu Seiten der ersten Ebene.
 
 \subsection{Breadcrumb Navigation}
 
@@ -29,12 +29,14 @@ Um die Popularität der Site zu erhöhen werden heutzutage kaum noch META-tags ver
 Um die Relevanz der Site zu erhöhen\footnote{vgl. \cite{googseo}}, sollte(n)
 
 \begin{itemize}
-	\item der Inhalt regelmäßig aktualisiert werden
-	\item die Reisen ausführlich beschrieben sein (Keywords)
-	\item die URL gut lesbar sein (mod\_rewrite)
-	\item dafür gesorgt werden, dass die Website auf anderen, qualitativ hochwertigen Seiten verlinkt wurde (Backlinks)
+	\item der Inhalt regelmäßig aktualisiert werden (siehe redaktionelles Konzept)
+	\item die Reisen ausführlich beschrieben sein
+	\item die URL gut lesbar sein (Einsatz von mod\_rewrite)
+	\item dafür gesorgt werden, dass die Website auf anderen, qualitativ hochwertigen Seiten verlinkt wurde
 	\item es die Möglichkeit geben die Site zu teilen (Social Media: Facebook, Google+ usw.)
 \end{itemize}
+
+Der Einsatz von mod\_rewrite ermöglicht es URL's so zu verändern, dass diese besser lesbar und somit auch einprägsamer werden. Hierzu sind einige Modifikationen in der .htaccess-Datei notwendig.
 
 \subsubsection{Sitemap}
 

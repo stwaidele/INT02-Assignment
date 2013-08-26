@@ -10,9 +10,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/header.php');
 		</div>
 		<h1>Amsterdam</h1>
 		<img alt ="Flussufer in Amsterdam" src="/img/amsterdam1.jpg" />
-		<p>Die Hafenstadt Amsterdam (niederländisch  Amsterdam?/i) ist die Hauptstadt und einwohnerstärkste Stadt der Niederlande. Amsterdam hat 799.345 Einwohner (Stand: 1. Januar 2013)[2] und als Agglomeration Groot-Amsterdam etwa 1,3 Millionen (August 2012)[3].</p>
+		<p>Die Hafenstadt Amsterdam (niederländisch  Amsterdam) ist die Hauptstadt und einwohnerstärkste Stadt der Niederlande. Amsterdam hat 799.345 Einwohner (Stand: 1. Januar 2013)[2] und als Agglomeration Groot-Amsterdam etwa 1,3 Millionen (August 2012)[3].</p>
 		
-		<p>Im Gro?raum Amsterdam, der den nördlichen Teil des niederländischen Verdichtungsraumes Randstad ausmacht, leben etwa 2,4 Millionen Menschen (2012)[4]. Auch wenn sich der Regierungssitz des Landes sowie die Königsresidenz im 60 Kilometer entfernten Den Haag befinden, ist Amsterdam seit 1983 gemäß niederländischer Verfassung die Hauptstadt der Niederlande.[5] Amsterdam liegt in der Provinz Nordholland, an der Mündung der Amstel und des IJ in das IJsselmeer. Amsterdam ist durch den Noordzeekanaal mit der Nordsee verbunden und durch die zahlreichen Grachten weltberühmt.</p>
+		<p>Im Großraum Amsterdam, der den nördlichen Teil des niederländischen Verdichtungsraumes Randstad ausmacht, leben etwa 2,4 Millionen Menschen (2012)[4]. Auch wenn sich der Regierungssitz des Landes sowie die Königsresidenz im 60 Kilometer entfernten Den Haag befinden, ist Amsterdam seit 1983 gemäß niederländischer Verfassung die Hauptstadt der Niederlande.[5] Amsterdam liegt in der Provinz Nordholland, an der Mündung der Amstel und des IJ in das IJsselmeer. Amsterdam ist durch den Noordzeekanaal mit der Nordsee verbunden und durch die zahlreichen Grachten weltberühmt.</p>
 		<img alt ="Fluss in Amsterdam" src="/img/amsterdam2.jpg" />
 		<h2>Tag 1</h2>
 		<p>Die Fahrt nach Amsterdam startet gegen Abend, die genaue Abfahrtszeit variiert je nach Abfahrtsort</p>
