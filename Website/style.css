@@ -1,4 +1,4 @@
-Ôªø /*
+ /*
 Authors: Stefan Waidele, Matthias Vongerichten
 */
 
@@ -60,8 +60,8 @@ table {
 
 body {
 	background: #C4AA8B;
+    font-size: 100%;
     font-family: Calibri ,Arial, Helvetica;
-	font-size:100%;
 }
 
 a:hover {
@@ -90,7 +90,7 @@ p,ol,ul {
 .remove-margin { margin-right: 0 !important }
 
 /*-----------------------------------------------------------------------------------*
-/* = √úberschriften
+/* = ‹berschriften
 /*-----------------------------------------------------------------------------------*/
 
 h1,
@@ -117,7 +117,7 @@ h4 {
 }
 
 /*-----------------------------------------------------------------------------------*
-/* = Seitenger√ºst
+/* = Seitenger¸st
 /*-----------------------------------------------------------------------------------*/
 
 #wrap{
@@ -225,10 +225,36 @@ h4 {
 	color: white;
 }
 #nav li a:hover {
-	color: white;
+	color: #004d79;
 	text-decoration: underline;
+	background-color: #fc0;
 }
 
+#nav li ul {
+	display: none;
+}
+#nav li:hover > ul {
+	float: none;
+	display: block;
+	position: absolute;
+	top: 28px;
+	left: 80px;
+	width: 250px;
+	background: #004d79;
+}
+#nav li ul li{
+	float: none;
+	display: block;
+	font-size: 80%;
+	background: #069;
+}
+#nav li ul li a{
+	display: block;
+	width: 90%;
+	border-right: none;
+	background: #004d79;
+	
+}
 
 
 /* Ribbons */
@@ -263,22 +289,14 @@ h4 {
 /*-----------------------------------------------------------------------------------*/
 
 #footer{
+	text-align:right;
 	font-size:0.7em;
 	background-color:#fac200;
 	border-bottom: 0px;
 	margin:10px 0 0 0;
-	padding: 5px 20px;
+	padding: 10px 20px;
 	overflow: hidden;
 	color: #7f7f7f;
-}
-
-#footer #right {
-	float:right;
-	line-height:24px;
-}
-
-#footer #right a {
-	vertical-align:bottom;
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -449,7 +467,7 @@ h4 {
 
 @media only screen and (min-width: 960px){
  
-/* Zeitgem√§√üer Desktop */
+/* Zeitgem‰ﬂer Desktop */
 
 	#wrap{
 	width:920px;
