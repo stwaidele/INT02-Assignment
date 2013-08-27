@@ -6,12 +6,32 @@ Das redaktionelle Konzept beschreibt die vorgesehenen Inhalte je Seite in Kurzfo
 
 Beim Navigationskonzept wurden die wichtigsten Navigationselemente beachtet. Hervorzuheben sind hier die "`Breadcrumb"'-Navigation und die Implementierung von mod\_rewrite.
 
+% Einfügen von Syntax-Highlighting
+
+RewriteEngine on
+RewriteRule ^\.htaccess$ - [F]
+RewriteBase /
+
+# Hauptseite "http://int02.10100.de" bzw. "/"
+RewriteRule ^$ /index.php
+
+# Reiseziele & Buchungsanfragen
+RewriteRule ^reiseziele/([-0-9a-z]+)$ reiseziele/$1.php
+RewriteRule ^reiseziele/([-0-9a-z]*)/buchungsanfrage$ kontakt.php?reise=$1
+
+# Sonstige Seiten
+RewriteRule ^([-0-9a-z]*)$ $1.php
+
+% Syntax-Highlighting Ende
+
 \textsc{Stefan Waidele}
 
 ...
 
 \subsection{Evt. Gesamtfazit}
 
-Die Website erfüllt die gestellten Anforderungen vollständig. So bescheinigt uns woorank.com (SEO-Analyse-Tool), dass z.B. nicht-funktionalen Anforderungen wie die Performance der Site sehr gut erfüllt werden. %screenshot 
+Die Website erfüllt die gestellten Anforderungen vollständig. So bescheinigt uns woorank.com (SEO-Analyse-Tool), dass z.B. nicht-funktionalen Anforderungen wie die Performance der Site sehr gut erfüllt werden.
 
-Ein nächster möglicher Schritt ist die Verwendung eines Content-Management-Systems (CMS). Dies ermöglicht das einfache Bearbeiten der Seiteninhalte mithilfe eines WYSIWYG-Editors (keine Code-Kenntnisse notwendig) und das Aufrechterhalten eines konsistenten Designs. Mit dem CMS ist es ebenfalls möglich einen Weblog zu betreiben welcher mit Facebook und anderen Social-Media-Sites integriert werden kann. Der Administrationsaufwand wird somit stark reduziert und trotzdem fällt es erstaunlich leicht die Funktionen der Website durch vorgefertigte Module zu erweitern.
+%screenshot scr_woorank_performance.png oder scr_woorank_mobile performance.png oder beides
+
+Ein nächster möglicher Schritt ist die Verwendung eines Content-Management-Systems (CMS). Dies ermöglicht das einfache Bearbeiten der Seiteninhalte mithilfe eines WYSIWYG-Editors (keine Code-Kenntnisse notwendig) und das Aufrechterhalten eines konsistenten Designs. Die Navigation kann auf mehrere Ebenen und Elemente verteilt werden und aktualisiert sich selbständig. Der Administrationsaufwand wird somit stark reduziert und trotzdem fällt es erstaunlich leicht die Funktionen der Website durch vorgefertigte Module zu erweitern. So ist es ebenfalls möglich einen Weblog zu betreiben welcher mit Facebook und anderen Social-Media-Diensten integriert werden kann. Ursprünglich als Weblog-System zu großer Bekanntheit gelangt, kann Wordpress heute als einfaches und komfortables CMS genannt werden. Für komplexere Anwendungsfälle eignet sich Drupal oder Typo3.

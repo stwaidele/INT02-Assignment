@@ -2,5 +2,69 @@
 
 \textsc{Matthias Vongerichten}
 
-Das Kontaktformular wurde mit HTML5 und CSS3 realisiert\footnote{\cite{oxp}}. Sollte der Browser dies nicht unterstützen gibt es eine Fallback-Funktion, welche das Formular per JavaScript überprüft\footnote{\cite{bdavis}}.
+%\includegraphics{scr_kontakt}
+%Bitte Bild einfügen, k.A. wie das geht :P
 
+Die Seite "`Kontakt"' besteht zum größten Teil aus einem Kontaktformular und den alternativen Kontaktmöglichkeiten in der Sidebar. 
+
+Das Kontaktformular verwendet das übliche HTML-Tag "`Form"' sowie einige HTML5-Funktionen. Erkennbar ist dies z.B. an dem Attribut "`required"', welches dem Browser signalisiert, dass dieses Formularelement ausgefüllt werden muss. Versucht der Benutzer das Formular abzuschicken erhält er einen Hinweis über das leere Element und wird aufgefordert es auszufüllen - vorausgesetzt der Browser ist HTML5-kompatibel. Das Formular wird durch eine übliche Tabelle strukturiert (table-tag).
+
+%CODE 
+/*...*/
+
+			<tr>
+				<td>Name: *</td>
+				<td><input id="name" placeholder="Bitte Name angeben" type="text" tabindex="1" required autofocus></td>
+			</tr>
+/*...*/
+%CODE Ende
+
+Für den Fall einer fehlenden HTML5-Unterstützung wurde eine Fallback-Lösung mittels JavaScript implementiert. Die Prüfung auf eine HTML5-Unterstützung wurde wie folgt umgesetzt und wird bei jedem Abschicken des Formulars durchgeführt.
+
+%CODE
+/*...*/
+	var inputs = document.createElement('input');
+	var supports = {};
+	supports.required  = 'required' in inputs;
+
+	if(!supports.required) {
+	/*...siehe unten...*/
+	}
+/*...*/
+%CODE Ende
+
+Trifft die Prüfung zu und HTML5 wird nicht unterstützt wird jedes auszufüllende Formularelement auf dessen Inhalt geprüft. Bei einem Fehler wird die Formularübermittlung abgebrochen und der Fokus auf das betroffene Element gesetzt.
+
+%CODE
+
+/*...*/
+		 name = document.getElementById("name").value;
+/*...*/
+		 if (name == "")
+		 {
+		 document.getElementById("name").select();
+		 document.getElementById("name").focus();
+		 return false;
+		 }
+/*...*/
+
+%CODE ENDE
+
+Da HTML5 auch die Plausibilität von E-Mail-Adressen prüft wurde auch dies im Fallback berücksichtigt. Hierfür wurde ein Regulärer Ausdruck verwendet:
+
+%CODE
+/*...*/
+		 if (!checkEmail(email))
+		 {
+		 alert('E-Mail ist ungültig.');
+		 return false;
+		 }
+/*...*/
+
+function checkEmail(inputvalue) {
+	var pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	return pattern.test(inputvalue);
+}
+/*...*/
+
+%CODE ENDE

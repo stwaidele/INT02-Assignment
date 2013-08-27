@@ -1,6 +1,7 @@
- /*
+Ôªø /*
 Authors: Stefan Waidele, Matthias Vongerichten
 */
+
 
 /*-----------------------------------------------------------------------------------*
 /* = Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
@@ -90,7 +91,7 @@ p,ol,ul {
 .remove-margin { margin-right: 0 !important }
 
 /*-----------------------------------------------------------------------------------*
-/* = ‹berschriften
+/* = √úberschriften
 /*-----------------------------------------------------------------------------------*/
 
 h1,
@@ -117,7 +118,7 @@ h4 {
 }
 
 /*-----------------------------------------------------------------------------------*
-/* = Seitenger¸st
+/* = Seitenger√ºst
 /*-----------------------------------------------------------------------------------*/
 
 #wrap{
@@ -467,7 +468,7 @@ h4 {
 
 @media only screen and (min-width: 960px){
  
-/* Zeitgem‰ﬂer Desktop */
+/* Zeitgem√§√üer Desktop */
 
 	#wrap{
 	width:920px;

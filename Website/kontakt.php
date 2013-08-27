@@ -14,24 +14,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/header.php');
 			<h2>Bitte füllen Sie das Formular aus um mit uns in Kontakt zu treten. Dankeschön.</h2>
 			<table id="contact-form">
 			<tr>
-					<td>Reise: *</td>
-					<td><input id="reise" type="text" tabindex="1" value="<?php echo (isset($_GET['reise'])?$_GET['reise']:"Allgemein"); ?>" required autofocus></td>
+				<td>Reise: *</td>
+				<td><input id="reise" type="text" tabindex="1" value="<?php echo (isset($_GET['reise'])?$_GET['reise']:"Allgemein"); ?>" required autofocus></td>
 			</tr>
 			<tr>
-					<td>Name: *</td>
-					<td><input id="name" placeholder="Bitte Name angeben" type="text" tabindex="1" required autofocus></td>
+				<td>Name: *</td>
+				<td><input id="name" placeholder="Bitte Name angeben" type="text" tabindex="1" required autofocus></td>
 			</tr>
 			<tr>
-					<td>E-Mail: *</td>
-					<td><input id="email" placeholder="Bitte E-Mail angeben" type="email" tabindex="2" required></td>
+				<td>E-Mail: *</td>
+				<td><input id="email" placeholder="Bitte E-Mail angeben" type="email" tabindex="2" required></td>
 			</tr>
 			<tr>
-					<td>Telefonnummer:</td>
-					<td><input id="tel" placeholder="Bitte Ihre Telefonnummer angeben" type="tel" tabindex="3"></td>
+				<td>Telefonnummer:</td>
+				<td><input id="tel" placeholder="Bitte Ihre Telefonnummer angeben" type="tel" tabindex="3"></td>
 			</tr>
 			<tr>
-					<td>Nachricht: *</td>
-					<td><textarea id="message" placeholder="Bitte Anfragetext angeben" tabindex="5" required></textarea></td>
+				<td>Nachricht: *</td>
+				<td><textarea id="message" placeholder="Bitte Anfragetext angeben" tabindex="5" required></textarea></td>
 			</tr>
 			<tr>
 				<td colspan="2">
