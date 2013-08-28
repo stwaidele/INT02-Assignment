@@ -2,69 +2,93 @@
 
 \textsc{Matthias Vongerichten}
 
-%\includegraphics{scr_kontakt}
-%Bitte Bild einfügen, k.A. wie das geht :P
+\begin{figure}[h]
+\includegraphics[width=\hsize]{scr_kontakt}
+\caption{Screenshot: Kontaktformular}
+\label{scr:kontakt}
+\end{figure}
 
 Die Seite "`Kontakt"' besteht zum größten Teil aus einem Kontaktformular und den alternativen Kontaktmöglichkeiten in der Sidebar. 
 
-Das Kontaktformular verwendet das übliche HTML-Tag "`Form"' sowie einige HTML5-Funktionen. Erkennbar ist dies z.B. an dem Attribut "`required"', welches dem Browser signalisiert, dass dieses Formularelement ausgefüllt werden muss. Versucht der Benutzer das Formular abzuschicken erhält er einen Hinweis über das leere Element und wird aufgefordert es auszufüllen - vorausgesetzt der Browser ist HTML5-kompatibel. Das Formular wird durch eine übliche Tabelle strukturiert (table-tag).
+Das Kontaktformular verwendet das übliche HTML-Tag "`Form"' sowie einige HTML5-Funktionen. Erkennbar ist dies z.B. an dem Attribut "`required"', welches dem Browser signalisiert, dass dieses Formularelement ausgefüllt werden muss. Versucht der Benutzer das Formular abzuschicken erhält er einen Hinweis über das leere Element und wird aufgefordert es auszufüllen - vorausgesetzt der Browser ist HTML5-kompatibel. Das Formular wird wie in Abbildung ~\ref{abb:formular} gezeigt durch eine übliche Tabelle strukturiert (HTML-Table Tag).
 
-%CODE 
-/*...*/
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{html}
+<tr>
+   <td>Name: *</td>
+   <td>
+      <input id          ="name"  
+             placeholder ="Bitte Name angeben" 
+             type        ="text" 
+             tabindex    ="1" 
+             required 
+             autofocus
+      >
+   </td>
+</tr>
+\end{minted}
+\caption{Quellcode: Formular (HTML)}
+\label{abb:formular}
+\end{figure}
 
-			<tr>
-				<td>Name: *</td>
-				<td><input id="name" placeholder="Bitte Name angeben" type="text" tabindex="1" required autofocus></td>
-			</tr>
-/*...*/
-%CODE Ende
+Für den Fall einer fehlenden HTML5-Unterstützung wurde eine Fallback-Lösung mittels JavaScript implementiert. Die Prüfung auf eine HTML5-Unterstützung wurde wie wie in Abbildung ~\ref{abb:required} gezeigt umgesetzt und wird bei jedem Abschicken des Formulars durchgeführt.
 
-Für den Fall einer fehlenden HTML5-Unterstützung wurde eine Fallback-Lösung mittels JavaScript implementiert. Die Prüfung auf eine HTML5-Unterstützung wurde wie folgt umgesetzt und wird bei jedem Abschicken des Formulars durchgeführt.
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{javascript}
+var inputs = document.createElement('input');
+var supports = {};
+supports.required  = 'required' in inputs;
 
-%CODE
-/*...*/
-	var inputs = document.createElement('input');
-	var supports = {};
-	supports.required  = 'required' in inputs;
-
-	if(!supports.required) {
-	/*...siehe unten...*/
-	}
-/*...*/
-%CODE Ende
-
-Trifft die Prüfung zu und HTML5 wird nicht unterstützt wird jedes auszufüllende Formularelement auf dessen Inhalt geprüft. Bei einem Fehler wird die Formularübermittlung abgebrochen und der Fokus auf das betroffene Element gesetzt.
-
-%CODE
-
-/*...*/
-		 name = document.getElementById("name").value;
-/*...*/
-		 if (name == "")
-		 {
-		 document.getElementById("name").select();
-		 document.getElementById("name").focus();
-		 return false;
-		 }
-/*...*/
-
-%CODE ENDE
-
-Da HTML5 auch die Plausibilität von E-Mail-Adressen prüft wurde auch dies im Fallback berücksichtigt. Hierfür wurde ein Regulärer Ausdruck verwendet:
-
-%CODE
-/*...*/
-		 if (!checkEmail(email))
-		 {
-		 alert('E-Mail ist ungültig.');
-		 return false;
-		 }
-/*...*/
-
-function checkEmail(inputvalue) {
-	var pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	return pattern.test(inputvalue);
+if(!supports.required) {
+   /*...siehe unten...*/
 }
-/*...*/
+\end{minted}
+\caption{Quellcode: HTML5 oder JavaScript--Fallback (JavaScript)}
+\label{abb:required}
+\end{figure}
 
-%CODE ENDE
+Trifft die Prüfung zu und HTML5 wird nicht unterstützt wird jedes auszufüllende Formularelement auf dessen Inhalt geprüft. Bei einem Fehler wird die Formularübermittlung abgebrochen und der Fokus auf das betroffene Element gesetzt (Siehe Abbildung ~\ref{abb:fokus}).
+
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{javascript}
+name = document.getElementById("name").value;
+/*...*/
+if (name == "")
+{
+   document.getElementById("name").select();
+   document.getElementById("name").focus();
+   return false;
+}
+\end{minted}
+\caption{Quellcode: Fokussteuerung bei fehlerhaften Eingaben (JavaScript)}
+\label{abb:fokus}
+\end{figure}
+
+Da HTML5 auch die Plausibilität von E-Mail-Adressen prüft wurde auch dies im Fallback mit einer entsprechenden Abfrage berücksichtigt (Siehe Abbildung ~\ref{abb:test}). 
+
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{javascript}
+if (!checkEmail(email))
+{
+   alert('E-Mail ist ungültig.');
+   return false;
+}
+\end{minted}
+\caption{Quellcode: Abfrage: E--Mail Adresse gültig? (JavaScript)}
+\label{abb:test}
+\end{figure}
+
+In der darin aufgerufenen Funktion wurde mithilfe des regulären Ausdrucks in Abbildung ~\ref{abb:regex} auf eine gültige E--Mail Adresse getestet
+
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{javascript}
+function checkEmail(inputvalue) {
+   var pattern = /^([a-zA-Z0-9_\.\-])\
+                  +\@(([a-zA-Z0-9\-])+\.)\
+                  +([a-zA-Z0-9]{2,4})+$/;
+   return pattern.test(inputvalue);
+}
+\end{minted}
+\caption{Quellcode: Regulärer Ausdruck: E--Mail Adresse (JavaScript)}
+\label{abb:regex}
+\end{figure}

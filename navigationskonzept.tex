@@ -12,11 +12,14 @@ Die Website besteht aus max. 2 Ebenen. Lediglich die Reisedetails gehören der zw
 
 \subsection{Hauptmenü}
 
-Das Hauptmenü ist im Header angesiedelt und beinhaltet ausschließlich Hyperlinks zu Seiten der ersten Ebene.
+Das Hauptmenü ist im Header angesiedelt und beinhaltet Hyperlinks zu Seiten der ersten Ebene. 
+Lediglich der Menüpunkt "Reiseziele" wird durch ein Popup--Menü mit den einzelnen Zielen erweitert
+um eine zielgerichtetere Navigation zu ermöglichen.
 
 \subsection{Breadcrumb Navigation}
 
-Zur besseren Orientierung wird über dem Titel einer Seite eine "`Brotkrümel"'-Navigation angezeigt. Diese ist im Content angesiedelt.
+Zur besseren Orientierung wird über dem Titel einer Seite eine "`Brotkrümel"'-Navigation angezeigt. 
+Diese ist im Content angesiedelt und muss wegen des Verzichts auf ein Content--Management--Systems von Hand aktuell gehalten werden.
 
 \subsection{Verwandte Seiten}
 
@@ -36,11 +39,28 @@ Um die Relevanz der Site zu erhöhen\footnote{vgl. \cite{googseo}}, sollte(n)
 	\item es die Möglichkeit geben die Site zu teilen (Social Media: Facebook, Google+ usw.)
 \end{itemize}
 
-Der Einsatz von mod\_rewrite ermöglicht es URL's so zu verändern, dass diese besser lesbar und somit auch einprägsamer werden. Hierzu sind einige Modifikationen in der .htaccess-Datei notwendig.
+Der Einsatz von mod\_rewrite ermöglicht es URLs so zu verändern, dass diese besser lesbar und somit auch einprägsamer werden. Hierzu sind die in Abbildung ~\ref{abb:htaccess} gezeigten Modifikationen in der Datei .htaccess notwendig.
+
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{apache}
+RewriteEngine on
+RewriteRule ^\.htaccess$ - [F]
+RewriteBase /
+
+# Hauptseite "http://int02.10100.de" bzw. "/"
+RewriteRule ^$ /index.php
+
+# Reiseziele & Buchungsanfragen
+RewriteRule ^reiseziele/([-0-9a-z]+)$ reiseziele/$1.php
+RewriteRule ^reiseziele/([-0-9a-z]*)/buchungsanfrage$ kontakt.php?reise=$1
+
+# Sonstige Seiten
+RewriteRule ^([-0-9a-z]*)$ $1.php
+\end{minted}
+\caption{Quellcode: .htaccess (Apache Konfiguration)}
+\label{abb:htaccess}
+\end{figure}
 
 \subsubsection{Sitemap}
 
 Eine hierarchische Auflistung aller Einzeldokumente der Website erleichtert den Suchmaschinen das Indexieren und bietet den Benutzern außerdem einen schnellen Überblick.
-
-
-

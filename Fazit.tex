@@ -4,25 +4,7 @@
 
 Das redaktionelle Konzept beschreibt die vorgesehenen Inhalte je Seite in Kurzform. Außerdem wird hierbei auch eine Richtlinie zur Aktualisierungshäufigkeit je Seite vorgegeben (unterstützt SEO). Somit wird erreicht, dass der redaktionelle Verantwortliche eine kompakte Anleitung zur Pflege der Website erhält.
 
-Beim Navigationskonzept wurden die wichtigsten Navigationselemente beachtet. Hervorzuheben sind hier die "`Breadcrumb"'-Navigation und die Implementierung von mod\_rewrite.
-
-% Einfügen von Syntax-Highlighting
-
-RewriteEngine on
-RewriteRule ^\.htaccess$ - [F]
-RewriteBase /
-
-# Hauptseite "http://int02.10100.de" bzw. "/"
-RewriteRule ^$ /index.php
-
-# Reiseziele & Buchungsanfragen
-RewriteRule ^reiseziele/([-0-9a-z]+)$ reiseziele/$1.php
-RewriteRule ^reiseziele/([-0-9a-z]*)/buchungsanfrage$ kontakt.php?reise=$1
-
-# Sonstige Seiten
-RewriteRule ^([-0-9a-z]*)$ $1.php
-
-% Syntax-Highlighting Ende
+Beim Navigationskonzept wurden die wichtigsten Navigationselemente beachtet. Hervorzuheben sind hier die "`Breadcrumb"'-Navigation und die Implementierung von mod\_rewrite (Abbildung ~\ref{abb:htaccess}, Seite ~\pageref{abb:htaccess}).
 
 \textsc{Stefan Waidele}
 
@@ -31,6 +13,17 @@ RewriteRule ^([-0-9a-z]*)$ $1.php
 \subsection{Evt. Gesamtfazit}
 
 Die Website erfüllt die gestellten Anforderungen vollständig. So bescheinigt uns woorank.com (SEO-Analyse-Tool), dass z.B. nicht-funktionalen Anforderungen wie die Performance der Site sehr gut erfüllt werden.
+
+\begin{figure}[h]
+\includegraphics[width=\hsize]{scr_woorank_performance.png}
+\caption{Screenshot: Performance}
+\label{scr:performance}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[width=\hsize]{scr_woorank_mobile_performance.png}
+\caption{Screenshot: Mobile Geräte}
+\label{scr:mobile}
+\end{figure}
 
 %screenshot scr_woorank_performance.png oder scr_woorank_mobile performance.png oder beides
 
