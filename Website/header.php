@@ -42,16 +42,16 @@
         	<li><a href="/" title="Startseite">Start</a></li>
 			<li class="sub"><a href="/reiseziele" title="Übersicht über die angebotenen Reiseziele">Reiseziele</a>
 				<ul>
-					<li>In Deutschland...</li>
+					<li>In Deutschland</li>
 					<li><a href="/reiseziele/berlin" title="Beeindruckendes Berlin">Berlin</a></li>
 					<li><a href="/reiseziele/muenchen" title="Mein München">München</a></li>
 					<li><a href="/reiseziele/hamburg" title="Hübsches Hamburg">Hamburg</a></li>
-					<li><a href="/reiseziele/castropbrauxel" title="Culinasches Castrop-Brauxel">Castrop-Brauxel</a></li>					
-					<li>...oder europaweit</li>
+					<li><a href="/reiseziele/deutschland" title="Reiseziele in Deutschland">...sonstige Deutschlandreisen</a></li>					
+					<li>oder europaweit</li>
 					<li><a href="/reiseziele/amsterdam" title="Atemberaubendes Amsterdam">Amsterdam</a></li>
 					<li><a href="/reiseziele/paris" title="Paris persönlich">Paris</a></li>
 					<li><a href="/reiseziele/london" title="Luminiertes London">London</a></li>
-					<li><a href="/reiseziele/barcelona" title="Beeindruckendes Barcelona">Barcelona</a></li>
+					<li><a href="/reiseziele/laenderuebersicht" title="Reiseziele in Europa">...sonstige Europareisen</a></li>
 					
 				</ul>
 			</li>
