@@ -28,7 +28,7 @@
 <div id="header">
 	<div id="social-bar">
 		<div class="fb-like-box" data-href="https://www.facebook.com/DeinBus" data-width="200" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
-		<g:plusone href="http://int02.10100.de" size="Tall"></g:plusone>
+		<div class="g-plusone" data-size="tall" data-href="http://int02.10100.de"></div>
 	</div>
 	<div class="logo clearfix">
 		<div id="main">
