@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
 <title>DeinBus - <?php echo $title; ?></title>
@@ -30,9 +30,9 @@
 		<div class="fb-like-box" data-href="https://www.facebook.com/DeinBus" data-width="200" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
 		<g:plusone href="http://int02.10100.de" size="Tall"></g:plusone>
 	</div>
-	<div class="logo clearfix">
+	<div id="logo" class="clearfix">
 		<div id="main">
-			<a href="/" title="Hier geht's zur Startseite"><img class="logo" 
+			<a href="/" title="Hier geht's zur Startseite"><img id="logo" 
             alt="DeinBus.de Logo" 
             src="/img/deinbus_transparent.png"/></a>
 		</div>
@@ -58,7 +58,7 @@
             <li><a href="/busse" title="In unseren Bussen reisen Sie mit allem Komfort">Die Busse</a></li>
 			<li><a href="/wirueberuns" title="Lernen Sie Ihre Reisebegleitung kennen">Über uns</a></li>
 			<li><a href="/kontakt" title="Gerne beantworten wir Ihre Fragen">Kontakt</a></li>
-		</ul>
+		<ul>
 		<span class="corner-left"></span>
 		<span class="corner-right"></span>
 	</div>
