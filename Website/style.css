@@ -269,7 +269,7 @@ h4 {
 	border-top: 10px solid transparent;
 	border-bottom: 0px solid transparent; 
 	border-right: 10px solid #222222;
-	}
+}
 .corner-right {
 	width: 0px; 
 	height: 0px;
@@ -279,7 +279,7 @@ h4 {
 	border-top: 10px solid transparent;
 	border-bottom: 0px solid transparent; 
 	border-left: 10px solid #222222;
-	}
+}
 
 #breadcrump {
 	font-size:0.8em;

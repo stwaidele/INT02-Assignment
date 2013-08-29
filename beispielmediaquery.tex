@@ -1,4 +1,38 @@
 \section{Detailbetrachtung: Responsive Layout}
 
-\textsc{Stefan Waidele}
+Die Anpassung an verschiedene Gerätetypen, vom Mobiltelefon über Tablet--PCs und ältere PCs bis hin zum Modernen PC mit großem Monitor wird im Stylesheet mit Hilfe von Media--Queries implementiert.
 
+So nimmt die Website auf kleinen Bildschirmen 90\% der Breite ein. Ab einer Fenstergrbreite von 960 Pixeln wächst die Breite des genutzten Bereichs jedoch nicht mehr. Hierdurch werden überlange Zeilen, die nur schwer zu lesen sind vermieden.
+Der Lesefluss wird weiterhin erleichtert, in dem ab 800 Pixeln Breite der Zeilenabstand um 20\% erhöht wird. 
+
+Auf kleinen Bildschrimen nehmen grafische Elemente wie das Logo oder Bilder die ganze zur Verfügung stehende Breite ein. Hierdurch werden zu große und auch zu kleine Grafiken vermieden und der geringe zur Verfügung stehende Platz wird optimal ausgenutzt.
+
+Als Beispiel werden in Abbildung~\ref{abb:mq} die Änderungen gezeigt, die bei einer Fensterbreite von 800 Pixeln gemacht werden:
+
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{css}
+@media only screen and (min-width: 800px){
+/* Klassischer Desktop */
+   p,ol,ul {
+      line-height:1.2;
+   }
+   #sidebar {
+      width:25%;
+      float:right;
+   }
+   #content {
+      width:70%;
+      float:left;
+   }
+   #content img {
+      float:left;
+      width:250px;
+   }
+   .titel {
+      width:100%;
+   }
+}
+\end{minted}
+\caption{Quellcode: Media Query (CSS)}
+\label{abb:mq}
+\end{figure}
