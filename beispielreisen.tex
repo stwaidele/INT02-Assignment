@@ -1,5 +1,5 @@
 \section{Beispielseite: Reiseziele}
-
+\label{bspreisen}
 \textsc{Stefan Waidele}
 
 \begin{figure}[h]
@@ -8,11 +8,11 @@
 \label{scr:reisen}
 \end{figure}
 
-Die Seite "Reiseziele" listet eine Auswahl der beliebtesten Reiseziele in Deutschland und Europa auf. 
+Die Seite "`Reiseziele"' listet eine Auswahl der beliebtesten Reiseziele in Deutschland und Europa auf. 
 Die nach Ländern sortierten Übersichtsseiten sind hier in der Seitenleiste verlinkt. Die Seite wird 
-von der Datei "/reiseziele/index.php" erzeugt.
+von der Datei \code{/reiseziele/index.php} erzeugt.
 
-Die hier gezeigten Elemente, besonders das Einbinden der gemeinsamen Elemente in "header.php" sowie "footer.php"
+Die hier gezeigten Elemente, besonders das Einbinden der gemeinsamen Elemente in \code{header.php} sowie \code{footer.php}
 aber auch der individuelle Content--Bereich und die Seitenleite sind bei allen Seiten dieses Projekts gleich.
 
 \subsection{Aufruf von header.php}
@@ -29,14 +29,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/header.php');
 \label{abb:header}
 \end{figure}
 
-Zunächst werden hierin einige Grundlegenden Angaben wie der Seitentitel in PHP-Variabeln abgelegt, um
-dann die für alle Seiten gleiche Header-Datei "/header.php" aufzurufen (Vergleiche Abbildung ~\ref{abb:header} ). Hierin ist der gesamte HTML-Head Bereich 
+Zunächst werden hierin einige Angaben wie der Seitentitel in PHP-Variabeln abgelegt, um
+dann die für alle Seiten gleiche Header-Datei \code{/header.php} aufzurufen (Vergleiche Abbildung~\ref{abb:header}). Hierin ist der gesamte HTML-Head Bereich 
 sowie der für Besucher sichtbare Seitenkopf bis zum Navigationsmenü gespeichert. Der Ersteller oder Bearbeiter
 der Reiseübersichtsseite braucht sich hierum nicht zu kümmern.
 
 \subsection{Realisierung der Breadcrumb--Navigation}
 
-Nachdem die beiden für das Layout notwendigen DIVs geöffnet wurden, muss nun die Breadcrumb--Navigation angezeigt werden, anhand derer der Besucher schnell sehen kann, an welcher Stelle der Hierarchiestufe er sich befindet. Die zuvor besuchten, höher liegenden Seiten sollen verlinkt sein. Der HTML--Code ist wie in Abbildung ~\ref{abb:breadcrumb} zu gestalten. 
+Nachdem die beiden für das Layout notwendigen DIVs geöffnet wurden, muss nun die Breadcrumb--Navigation angezeigt werden, anhand derer der Besucher schnell sehen kann, an welcher Stelle der Hierarchiestufe er sich befindet. Die zuvor besuchten, höher liegenden Seiten sollen verlinkt sein. Der HTML--Code ist wie in Abbildung~\ref{abb:breadcrumb} zu gestalten. 
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{html}
@@ -52,7 +52,7 @@ Nachdem die beiden für das Layout notwendigen DIVs geöffnet wurden, muss nun die
 
 \subsection{Kurzvorstellung der Reiseziele}
 
-Nachdem der Seitentitel mit dem HTML-Tag <h1> und die Reiseregion (Deutschland bzw. Europa) mit <h2> ausgezeichnet wurden, beginnt die Beschreibung der eigentlichen Reiseziele mit einer Überschrift der Stufe <h3>, gefolgt von einem passenden Bild und dem beschreibenden Text. Am Ende der Kurzbeschreibung wird auf die Seite mit den entsprechenden Detailinformationen verlinkt. Somit ergibt sich eine Abfolge wie in  Abbildung ~\ref{abb:stadt} zu sehen ist:
+Nachdem der Seitentitel mit dem HTML-Tag \code{<h1>} und die Reiseregion (Deutschland bzw. Europa) mit \code{<h2>} ausgezeichnet wurden, beginnt die Beschreibung der eigentlichen Reiseziele mit einer Überschrift der Stufe \code{<h3>}, gefolgt von einem passenden Bild und dem beschreibenden Text. Am Ende der Kurzbeschreibung wird auf die Seite mit den entsprechenden Detailinformationen verlinkt. Somit ergibt sich eine Abfolge wie in  Abbildung~\ref{abb:stadt} zu sehen ist:
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{html}
@@ -76,7 +76,7 @@ Aufgrund der Formatierungen im CSS muss der Redakteur wohl den korrekten HTML-Sy
 \subsection{Seitenleiste}
 
 Auch die Seitenleiste wird in den entsprechenden Layout-DIVs nach einem einfachen, sich wiederholenden Muster realisiert.
-Wie in Abbildung ~\ref{abb:sidebar} zu erkennen ist, bestehen die Überschriften der Seitenleisten aus einem als DIV ausgezeichnetem Text, der von den Unterpunkten in Form einer HTML-Liste gefolgt wird. 
+Wie in Abbildung~\ref{abb:sidebar} zu erkennen ist, bestehen die Überschriften der Seitenleisten aus einem als \code{DIV} ausgezeichnetem Text, der von den Unterpunkten in Form einer HTML-Liste gefolgt wird. 
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{html}
@@ -101,7 +101,7 @@ Wie in Abbildung ~\ref{abb:sidebar} zu erkennen ist, bestehen die Überschriften 
 
 \subsection{Aufruf von footer.php}
 
-Zum Abschluss der Seite wird mit der Codezeile aus Abbildung ~\ref{abb:footer} noch die Datei "/footer.php" eingelesen. Hier wird der einheitliche Seitenfuß mit den Links zum Impressum, zu den AGBs und zur Sitemap dargestellt. 
+Zum Abschluss der Seite wird mit der Codezeile aus Abbildung~\ref{abb:footer} noch die Datei \code{/footer.php} eingelesen. Hier wird der einheitliche Seitenfuß mit den Links zum Impressum, zu den AGBs und zur Sitemap dargestellt. 
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{php}

@@ -10,7 +10,9 @@
 
 Die Seite "`Kontakt"' besteht zum größten Teil aus einem Kontaktformular und den alternativen Kontaktmöglichkeiten in der Sidebar. 
 
-Das Kontaktformular verwendet das übliche HTML-Tag "`Form"' sowie einige HTML5-Funktionen. Erkennbar ist dies z.B. an dem Attribut "`required"', welches dem Browser signalisiert, dass dieses Formularelement ausgefüllt werden muss. Versucht der Benutzer das Formular abzuschicken erhält er einen Hinweis über das leere Element und wird aufgefordert es auszufüllen - vorausgesetzt der Browser ist HTML5-kompatibel. Das Formular wird wie in Abbildung ~\ref{abb:formular} gezeigt durch eine übliche Tabelle strukturiert (HTML-Table Tag).
+
+\subsection{Validierung per HTML5}
+Das Kontaktformular verwendet das übliche HTML--Tag \code{Form} sowie einige HTML5--Funktionen. Erkennbar ist dies z.B. an dem Attribut \code{required}, welches dem Browser signalisiert, dass dieses Formularelement ausgefüllt werden muss. Versucht der Benutzer das Formular abzuschicken erhält er einen Hinweis über das leere Element und wird aufgefordert es auszufüllen --- vorausgesetzt der Browser ist HTML5--kompatibel. Das Formular wird wie in Abbildung ~\ref{abb:formular} gezeigt durch eine übliche, und hier auch semantisch gerechtfertigte, Tabelle strukturiert (HTML--Table Tag).
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{html}
@@ -31,7 +33,9 @@ Das Kontaktformular verwendet das übliche HTML-Tag "`Form"' sowie einige HTML5-F
 \label{abb:formular}
 \end{figure}
 
-Für den Fall einer fehlenden HTML5-Unterstützung wurde eine Fallback-Lösung mittels JavaScript implementiert. Die Prüfung auf eine HTML5-Unterstützung wurde wie wie in Abbildung ~\ref{abb:required} gezeigt umgesetzt und wird bei jedem Abschicken des Formulars durchgeführt.
+\subsection{Validierung per JavaScript}
+
+Für den Fall einer fehlenden HTML5--Unterstützung wurde eine Fallback--Lösung mittels JavaScript implementiert. Die Prüfung auf eine HTML5--Unterstützung wurde wie wie in Abbildung ~\ref{abb:required} gezeigt umgesetzt und wird bei jedem Abschicken des Formulars durchgeführt.
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{javascript}
@@ -46,6 +50,8 @@ if(!supports.required) {
 \caption{Quellcode: HTML5 oder JavaScript--Fallback (JavaScript)}
 \label{abb:required}
 \end{figure}
+
+\subsection{Eingabefokus auf dem fehlerhaften Element}
 
 Trifft die Prüfung zu und HTML5 wird nicht unterstützt wird jedes auszufüllende Formularelement auf dessen Inhalt geprüft. Bei einem Fehler wird die Formularübermittlung abgebrochen und der Fokus auf das betroffene Element gesetzt (Siehe Abbildung ~\ref{abb:fokus}).
 
@@ -64,7 +70,9 @@ if (name == "")
 \label{abb:fokus}
 \end{figure}
 
-Da HTML5 auch die Plausibilität von E-Mail-Adressen prüft wurde auch dies im Fallback mit einer entsprechenden Abfrage berücksichtigt (Siehe Abbildung ~\ref{abb:test}). 
+\subsection{Überprüfung der E--Mail Adresse}
+
+Da HTML5 auch die Plausibilität von E--Mail Adressen prüft wurde auch dies im Fallback mit einer entsprechenden Abfrage berücksichtigt (Siehe Abbildung ~\ref{abb:test}). 
 
 \begin{figure}[h]
 \begin{minted}[bgcolor=bg]{javascript}
@@ -92,3 +100,4 @@ function checkEmail(inputvalue) {
 \caption{Quellcode: Regulärer Ausdruck: E--Mail Adresse (JavaScript)}
 \label{abb:regex}
 \end{figure}
+\clearpage

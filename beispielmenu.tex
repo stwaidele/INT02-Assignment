@@ -1,0 +1,48 @@
+\section{Detailbetrachtung: Dropdown--Menüs mit CSS}
+\label{sec:cssdropdown}
+\textsc{Stefan Waidele}
+
+Wie im Designkonzept beschrieben, wird das Dropdown--Menü in der Navigationsleiste ohne JavaScript\footnote{Vgl. Kapitel \ref{sec:avoidjs}, Seite \pageref{sec:avoidjs}} implementiert, auch wenn hierbei geringe Abstriche bei der Browserkompatibilität zu machen sind\footnote{Vgl. Kapitel \ref{sec:compat}, Seite \pageref{sec:compat}}. Die dahinter stehende Technik soll hier in Grunzügen gezeigt werden\footnote{Vgl. \cite{ericmeyer}}. Der Übersichtlichkeit halber werden nur die relevanten Tags bzw. Attribute in den Codebeispielen aufgeführt.
+
+Die Menüleiste wird, semantisch korrekt, als Aufzählungsliste im HTML--Quelltext ausgezeichnet, und dann mit den CSS--Eigenschaften entsprechend formatiert. So entsteht die Hauptebene der Navigation mit den Seiten der ersten Hierarchiestufe.
+
+\begin{figure}[h]
+\begin{minted}[bgcolor=bg]{html}
+<div id="nav">
+   <ul>
+      <li><a href="/">Start</a></li>
+      <li><a href="/reiseziele">Reiseziele</a></li>
+         <ul>
+            <li>In Deutschland</li>
+            <li><a href="/reiseziele/berlin">Berlin</a></li>
+            <li>oder europaweit</li>
+            <li><a href="/reiseziele/amsterdam">Amsterdam</a></li>
+         </ul>
+      <li><a href="/busse">Die Busse</a></li>
+      <li><a href="/wirueberuns">Über uns</a></li>
+      <li><a href="/kontakt">Kontakt</a></li>
+   </ul>
+</div>
+\end{minted}
+\caption{Quellcode: Navigationsmenü, Ebene 1 und 2 (HTML)}
+\label{abb:navmenul1}
+\end{figure} 
+
+Die zweite Hierarchiestufe wird, wie in Abbildung~\ref{abb:navmenul1} gezeigt, in einer geschachtelten Liste ausgezeichnet.  
+
+Mit dem CSS-Selektor \code{\#nav li ul}\footnote{Alle nicht--nummerierten Listen, die in einem \code{li}-Tag innerhalb einem \code{DIV} mit der ID \code{nav} enthalten sind} sowie der CSS-Eigenschaft \code{display: none;} wird diese zunächst ausgeblendet.
+
+Über den Selektor \code{\#nav li:hover > ul}\footnote{Die erste nicht--nummerierte Liste, die sich in dem \code{li}-Tag unterhalb des Mauszeigers innerhalb einem \code{DIV} mit der ID \code{nav} enthalten ist} wird das Menü genau dann mit \code{display: block;} angezeigt, wenn sich die Maus über dem Menütitel befindet.
+
+Die zweite Hierarchiestufe wird nur dann eingeblendet, wenn der Mauszeiger ein entsprechendes Element der obersten Ebene berührt. 
+
+\subsection{Browserkompatibilität}
+
+Die hier gezeigt Lösung funktioniert in allen Browsern. Hierbei sind folgende Fälle zu unterscheiden:
+
+\begin{itemize}
+	\item \textbf{Browser ohne CSS--Unterstützung:}\\Browser, die mit CSS gar nicht umgehen können, stellen den HTML--Code komplett, d.h. der Nutzer sieht das komplette Menü. Dieses wird dann aber als normal formatierte, geschachtelte Liste untereinander mit Spiegelpunkten angezeigt. Die gesamte Seite sieht nicht so aus, wie dies vom Betreiber gewünscht ist, aber es werden alle Informationen und die vollständige Navigation angezeigt.
+	\item \textbf{Alte Browser mit schlechter CSS--Unterstützung:}\\Alle Browser, die CSS unterstützen können mit der Eigenschaft \code{display: none;} umgehen. In den Anfangszeiten der CSS--Unterstützung wurde jedoch die \code{:hover} Pseudoklasse nicht für alle Elemente vorgesehen. Somit wird in diesen Browsern nur die oberste Menüebene angezeigt\footnote{Vgl. \cite{ericmeyer}}. Für Anwender mit solch historischen Browsern sollten die tieferen Hierarchieebenen über die Seitenleiste oder anderweitig nochmals verlinkt sein, damit auch hier die komplette Website angezeigt werden kann.
+	\item \textbf{Moderne Browser:}\\Browser mit vollständiger CSS--Unterstützung zeigen die Menüs (und die gesamte Website) so an, wie dies vom Betreiber und Designer vorgesehen ist. Da die hier genutzten Techniken bereits schon seit über 10 Jahren existieren, sollten somit die meisten Nutzer inzwischen keine Probleme mit der Darstellung haben.
+\end{itemize}	
+\clearpage

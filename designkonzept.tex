@@ -9,9 +9,7 @@ Diese Richtlinien sollten für alle Einzelseiten des Webauftritts beachtet werden
 
 \subsection{Einheitliche Darstellung durch CSS}
 
-Durch den Einsatz von Cascading Style Sheets (CSS) werden die Designvorgaben zentral codiert und können somit leicht und einheitlich bei der Erstellung der Einzelseiten
-genutzt werden. Änderungen an Details wie Schriftschnitte und --größen, am Farbschema oder auch an den Größenverhältnissen der Seitenelemte sind 
-somit nur an einer zentralen Stelle vorzunehmen und wirken sich direkt auf alle Unterseiten aus. 
+Durch den Einsatz von Cascading Style Sheets (CSS) werden die Designvorgaben zentral codiert und können somit leicht und einheitlich bei der Erstellung der Einzelseiten genutzt werden. Änderungen an Details wie Schriftschnitte und --größen, am Farbschema oder auch an den Größenverhältnissen der Seitenelemte sind somit nur an einer zentralen Stelle vorzunehmen und wirken sich direkt auf alle Unterseiten aus. 
 
 Außerdem bleibt das tatsächliche Markup der Seiten weitgehend frei von gestalterischen Informationen, was die Übersichtlichkeit deutlich erhöht.
 
@@ -30,8 +28,8 @@ Durch entsprechend definierte Media-Queries wird ein auf die jeweilige Bildschir
 
 \subsection{Farbkonzept}
 
-Die Hauptfarben des Designs sind durch das Corporate Design vorgegeben. Diese sind ein kräftiges Blau (am Bildschrim etwa \#004d79\footnote{Notation nach HTML/CSS Standard in hexadezimalen Anteilen von Rot, Grün und Blau)}, 
-ein kräftig leuchtendes Gelb (etwa \#f{}f2) sowie ein etwas dunkleres Orange (etwa \#fc0). Als Hilfsfarbe werden außerdem Weiß (\#f{}f{}f) sowie ein etwas helleres Blau (etwa \#069) eingesetzt.
+Die Hauptfarben des Designs sind durch das Corporate Design vorgegeben. Diese sind ein kräftiges Blau (am Bildschrim etwa \code{\#004d79}\footnote{Notation aller Farben nach HTML/CSS Standard in ein- oder zweistelligen hexadezimalen Anteilen von Rot, Grün und Blau)}, 
+ein kräftig leuchtendes Gelb (etwa \code{\#f{}f2}) sowie ein etwas dunkleres Orange (etwa \code{\#fc0}). Als Hilfsfarbe werden außerdem Weiß (\code{\#f{}f{}f}) sowie ein etwas helleres Blau (etwa \code{\#069}) eingesetzt.
 
 \subsection{Richtlinien für Grafiken}
 
@@ -48,14 +46,16 @@ Durch dieses responsive Layout können die verschriedenen Gerätetypen optimal unt
 Auf die Realisierung eines darüber hinaus "`fließenden Layouts"' durch Breitenangaben in Prozentwerten wird zugunsten besserer Kontrolle über Layoutdetails verzichtet.
 
 \subsection{Animationen, JavaScript und sonstige Hilfsmittel}
-
+\label{sec:avoidjs}
 Auf Animationen und andere Spezialeffekte wird zugunsten guter Lesbarkeit verzichtet. Lediglich in der Navigationsleiste werden die einzelnen Menüpunkte beim Berühren mit der Maus fablich anders hinterlegt. Dies wird mit Hilfe der CSS-Pseudoklasse ``:hover'' realisiert und bedarf somit keinem JavaScript.
+
+Das ausklappbare Menü in der Navigationsleiste wird ebenfalls ohne JavaScript nur mit dem Einsatz von CSS implementiert\footnote{Vgl. Kapitel~\ref{sec:cssdropdown}, Seite ~\pageref{sec:cssdropdown}}. 
 
 Für die Plausibilitätsprüfung der Eingaben im Kontaktformular bietet sich JavaScript an, da diese so vor einer Anfrage an den Webserver vorgenommen werden kann. Dies bringt für den Besucher der Website eine schnellere Reaktionszeit und entlastet gleichzeitig den Server.
 
 \subsection{Browserkompatibilität}
-
-Durch die Verwendung von CSS kann ein modernes und ansprechendes Design bei maximaler Browserkompatibilität realisiert werden. Auch wenn die Website nicht in allen Webbrowsern gleich aussieht, und es bei sehr alten Versionen auch zu sichtbaren Darstellungsfehlern kommen kann (siehe Screenshots im Anhang), so ist die Website trotzdem funktionsfähig. 
+\label{sec:compat}
+Durch die Verwendung von CSS kann ein modernes und ansprechendes Design bei maximaler Browserkompatibilität realisiert werden. Auch wenn die Website nicht in allen Webbrowsern gleich aussieht, und es bei sehr alten Versionen auch zu sichtbaren Darstellungsfehlern kommen kann, so ist die Website trotzdem funktionsfähig. 
 
 Manche Funktionen, wie z.B. die ausklappenden Navigationsmenüs, sind in alten Browserversionen nicht zugänglich. In diesem Fall wird dann nur die Hauptkategorie angezeigt, die Unterseiten sind dann erst in einem nächsten Schritt erreichbar.
 
