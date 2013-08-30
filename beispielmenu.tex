@@ -2,7 +2,7 @@
 \label{sec:cssdropdown}
 \textsc{Stefan Waidele}
 
-Wie im Designkonzept beschrieben, wird das Dropdown--Menü in der Navigationsleiste ohne JavaScript\footnote{Vgl. Kapitel \ref{sec:avoidjs}, Seite \pageref{sec:avoidjs}} implementiert, auch wenn hierbei geringe Abstriche bei der Browserkompatibilität zu machen sind\footnote{Vgl. Kapitel \ref{sec:compat}, Seite \pageref{sec:compat}}. Die dahinter stehende Technik soll hier in Grunzügen gezeigt werden\footnote{Vgl. \cite{ericmeyer}}. Der Übersichtlichkeit halber werden nur die relevanten Tags bzw. Attribute in den Codebeispielen aufgeführt.
+Wie im Designkonzept beschrieben, wird das Dropdown--Menü in der Navigationsleiste ohne JavaScript\footnote{Vgl. Kapitel \ref{sec:avoidjs}, Seite \pageref{sec:avoidjs}} implementiert, auch wenn hierbei geringe Abstriche bei der Browserkompatibilität zu machen sind\footnote{Vgl. Kapitel \ref{sec:compat}, Seite \pageref{sec:compat}}. Die dahinter stehende Technik soll hier in Grundzügen gezeigt werden\footnote{Vgl. \cite{ericmeyer}}. Der Übersichtlichkeit halber werden nur die relevanten Tags bzw. Attribute in den Codebeispielen aufgeführt.
 
 Die Menüleiste wird, semantisch korrekt, als Aufzählungsliste im HTML--Quelltext ausgezeichnet, und dann mit den CSS--Eigenschaften entsprechend formatiert. So entsteht die Hauptebene der Navigation mit den Seiten der ersten Hierarchiestufe.
 
@@ -38,7 +38,7 @@ Die zweite Hierarchiestufe wird nur dann eingeblendet, wenn der Mauszeiger ein e
 
 \subsection{Browserkompatibilität}
 
-Die hier gezeigt Lösung funktioniert in allen Browsern. Hierbei sind folgende Fälle zu unterscheiden:
+Die hier gezeigte Lösung funktioniert in allen Browsern. Hierbei sind folgende Fälle zu unterscheiden:
 
 \begin{itemize}
 	\item \textbf{Browser ohne CSS--Unterstützung:}\\Browser, die mit CSS gar nicht umgehen können, stellen den HTML--Code komplett, d.h. der Nutzer sieht das komplette Menü. Dieses wird dann aber als normal formatierte, geschachtelte Liste untereinander mit Spiegelpunkten angezeigt. Die gesamte Seite sieht nicht so aus, wie dies vom Betreiber gewünscht ist, aber es werden alle Informationen und die vollständige Navigation angezeigt.
