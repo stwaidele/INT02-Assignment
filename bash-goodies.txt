@@ -1,0 +1,15 @@
+# Immer ins entsprechende Verzeichniss... ;)
+cd Internetquellen
+
+# URLs aus ../Literatur.bib extrahieren
+# cut -d : Feldtrenner
+#     -f : Nummer des auszugebenden Felds
+cat ../Literatur.bib | grep URL | cut -d{ -f2 | cut -d} -f1 >URLs.txt
+
+# Die Webseiten aus der Liste im aktuellen Verzeichniss speichern
+# -e robots=off : robots.txt ignorieren
+# -K : Links für lokales Browsen konvertieren, Orginaldatei mit Erweiterung .orig sichern
+# -p : Alle zur Darstellung des Dokumentes notwendigen Dateien holen
+# -x : Unterverzwichnisse erzwingen (Ahmt die URL- und Ordnerstruktur nach)
+# -i : URL aus der Dateil einlesen
+wget -e robots=off -Kpx -i URLs.txt
